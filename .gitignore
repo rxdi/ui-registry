@@ -1,0 +1,8 @@
+node_modules
+.rxdi
+/packages
+/files
+.jsipfs
+.cache
+dist
+./my-project/.cache

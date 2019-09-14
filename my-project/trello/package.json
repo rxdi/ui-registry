@@ -1,0 +1,6 @@
+{
+    "dependencies": {
+        "@rxdi/router": "0.7.17",
+        "@rxdi/lit-html": "0.7.16"
+    }
+}
