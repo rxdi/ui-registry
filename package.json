@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "docker run -p 8957:8957 -p 5001:5001 -p 8080:8080 -p 9300:9300 -v $(pwd)/my-project:/usr/src/app/files -v $(pwd)/packages:/usr/src/app/packages -v $(pwd)/.rxdi:/root/.rxdi -v $(pwd)/.jsipfs:/root/.jsipfs -i -t rxdi/deploy:latest --graphiql-playground --webui --browser",
-    "start-nodejs": "docker run -p 8957:8957 -p 5001:5001 -p 8080:8080 -p 9300:9300 -v $(pwd)/my-project:/usr/src/app/files -v $(pwd)/packages:/usr/src/app/packages -v $(pwd)/.rxdi:/root/.rxdi -v $(pwd)/.jsipfs:/root/.jsipfs -i -t rxdi/deploy:latest --graphiql-playground --webui",
+    "start": "docker run -p 8957:8957 -p 5001:5001 -p 8080:8080 -p 9300:9300 -v $(pwd)/my-project:/usr/src/app/files -v $(pwd)/packages:/usr/src/app/packages -v $(pwd)/.rxdi:/root/.rxdi -v $(pwd)/.jsipfs:/root/.jsipfs -i -t rxdi/deploy:latest --graphiql-playground --webui --browser --html ./index.html --interceptor ./interceptor.ts",
+    "start-nodejs": "docker run -p 8957:8957 -p 5001:5001 -p 8080:8080 -p 9300:9300 -v $(pwd)/my-project:/usr/src/app/files -v $(pwd)/packages:/usr/src/app/packages -v $(pwd)/.rxdi:/root/.rxdi -v $(pwd)/.jsipfs:/root/.jsipfs -i -t rxdi/deploy:latest --graphiql-playground --webui --html ./index.html --interceptor ./interceptor.ts",
     "local": "rxdi-deploy --graphiql-playground --webui --browser --ipfs-api-gateway 8080 --ipfs-api-port 5001"
   },
   "repository": {
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/rxdi/ui-registry/issues"
   },
-  "homepage": "https://github.com/rxdi/ui-registry#readme"
+  "homepage": "https://github.com/rxdi/ui-registry#readme",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
 }

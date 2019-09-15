@@ -1,4 +1,4 @@
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/part' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/part' {
 	/**
 	 * @license
 	 * Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
@@ -49,7 +49,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	export const nothing: {};
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/template' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/template' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -146,7 +146,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	export const lastAttributeNameRegex: RegExp;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/template-factory' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/template-factory' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -208,7 +208,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	export const templateCaches: Map<string, templateCache>;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/render-options' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/render-options' {
 	/**
 	 * @license
 	 * Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
@@ -232,7 +232,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	}
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/parts' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/parts' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -381,7 +381,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	export {};
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/template-processor' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/template-processor' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -420,7 +420,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	}
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/template-result' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/template-result' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -464,7 +464,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	}
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/default-template-processor' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/default-template-processor' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -508,7 +508,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	export const defaultTemplateProcessor: DefaultTemplateProcessor;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/directive' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/directive' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -572,7 +572,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	export const isDirective: (o: unknown) => o is DirectiveFn;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/dom' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/dom' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -603,7 +603,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	export const removeNodes: (container: Node, start: Node, end?: Node) => void;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/render' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/render' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -639,7 +639,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	export const render: (result: TemplateResult, container: Element | DocumentFragment, options?: Partial<RenderOptions>) => void;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/template-instance' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/template-instance' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -671,7 +671,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	}
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/directives/async-append' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/directives/async-append' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -706,7 +706,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/dir
 	export const asyncAppend: (value: AsyncIterable<unknown>, mapper?: (v: unknown, index?: number) => unknown) => (part: Part) => Promise<void>;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/directives/async-replace' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/directives/async-replace' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -742,7 +742,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/dir
 	export const asyncReplace: (value: AsyncIterable<unknown>, mapper?: (v: unknown, index?: number) => unknown) => (part: Part) => Promise<void>;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/directives/cache' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/directives/cache' {
 	/**
 	 * @license
 	 * Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
@@ -774,7 +774,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/dir
 	export const cache: (value: unknown) => (part: Part) => void;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/directives/class-map' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/directives/class-map' {
 	/**
 	 * @license
 	 * Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
@@ -805,7 +805,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/dir
 	export const classMap: (classInfo: ClassInfo) => (part: Part) => void;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/directives/guard' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/directives/guard' {
 	/**
 	 * @license
 	 * Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
@@ -856,7 +856,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/dir
 	export const guard: (value: unknown, f: () => unknown) => (part: Part) => void;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/directives/if-defined' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/directives/if-defined' {
 	/**
 	 * @license
 	 * Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
@@ -880,7 +880,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/dir
 	export const ifDefined: (value: unknown) => (part: Part) => void;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/directives/repeat' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/directives/repeat' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -919,7 +919,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/dir
 	export const repeat: <T>(items: Iterable<T>, keyFnOrTemplate: KeyFn<T> | ItemTemplate<T>, template?: ItemTemplate<T>) => DirectiveFn;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/directives/style-map' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/directives/style-map' {
 	/**
 	 * @license
 	 * Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
@@ -957,7 +957,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/dir
 	export const styleMap: (styleInfo: StyleInfo) => (part: Part) => void;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/directives/unsafe-html' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/directives/unsafe-html' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -982,7 +982,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/dir
 	export const unsafeHTML: (value: unknown) => (part: Part) => void;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/directives/until' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/directives/until' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -1019,7 +1019,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/dir
 	export const until: (...args: unknown[]) => (part: Part) => void;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/directives/index' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/directives/index' {
 	export * from './async-append';
 	export * from './async-replace';
 	export * from './cache';
@@ -1032,7 +1032,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/dir
 	export * from './until';
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lit-html' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lit-html' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -1076,11 +1076,11 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lit
 	export * from './directives/index';
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/template-observable' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/decorators/template-observable' {
 	export function TemplateObservable(animationFrame?: boolean): (target: any, key: string) => void;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-element/lib/css-tag' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-element/lib/css-tag' {
 	/**
 	@license
 	Copyright (c) 2019 The Polymer Project Authors. All rights reserved.
@@ -1121,7 +1121,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-element/
 	export {};
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/Subscription' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/Subscription' {
 	import { SubscriptionLike, TeardownLogic } from './types';
 	/**
 	 * Represents a disposable resource, such as the execution of an Observable. A
@@ -1190,7 +1190,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/Subscription' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/types' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/types' {
 	import { Observable } from './Observable';
 	import { Subscription } from './Subscription';
 	/** OPERATOR INTERFACES */
@@ -1275,7 +1275,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/types' {
 	export type ObservedValuesFromArray<X> = X extends Array<ObservableInput<infer T>> ? T : never;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/Subscriber' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/Subscriber' {
 	import { Observer, PartialObserver } from './types';
 	import { Subscription } from './Subscription';
 	/**
@@ -1365,7 +1365,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/Subscriber' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/Operator' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/Operator' {
 	import { Subscriber } from './Subscriber';
 	import { TeardownLogic } from './types';
 	export interface Operator<T, R> {
@@ -1373,7 +1373,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/Operator' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/iif' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/iif' {
 	import { Observable } from '../Observable';
 	import { SubscribableOrPromise } from '../types';
 	/**
@@ -1467,7 +1467,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/iif' {
 	export function iif<T, F>(condition: () => boolean, trueResult?: SubscribableOrPromise<T>, falseResult?: SubscribableOrPromise<F>): Observable<T | F>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/throwError' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/throwError' {
 	import { Observable } from '../Observable';
 	import { SchedulerLike } from '../types';
 	/**
@@ -1537,7 +1537,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/throwEr
 	export function throwError(error: any, scheduler?: SchedulerLike): Observable<never>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/Observable' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/Observable' {
 	import { Operator } from './Operator';
 	import { Subscriber } from './Subscriber';
 	import { Subscription } from './Subscription';
@@ -1631,7 +1631,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/Observable' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/Subject' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/Subject' {
 	import { Operator } from './Operator';
 	import { Observable } from './Observable';
 	import { Subscriber } from './Subscriber';
@@ -1695,7 +1695,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/Subject' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/ConnectableObservable' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/ConnectableObservable' {
 	import { Subject } from '../Subject';
 	import { Observable } from '../Observable';
 	import { Subscriber } from '../Subscriber';
@@ -1721,7 +1721,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/Connect
 	export const connectableObservableDescriptor: PropertyDescriptorMap;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/operators/groupBy' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/operators/groupBy' {
 	import { Subscriber } from '../Subscriber';
 	import { Subscription } from '../Subscription';
 	import { Observable } from '../Observable';
@@ -1756,7 +1756,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/operators/groupBy'
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/symbol/observable' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/symbol/observable' {
 	 global {
 	    interface SymbolConstructor {
 	        readonly observable: symbol;
@@ -1766,7 +1766,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/symbol/observable'
 	export const observable: string | symbol;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/BehaviorSubject' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/BehaviorSubject' {
 	import { Subject } from './Subject';
 	import { Subscriber } from './Subscriber';
 	import { Subscription } from './Subscription';
@@ -1787,7 +1787,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/BehaviorSubject' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/ReplaySubject' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/ReplaySubject' {
 	import { Subject } from './Subject';
 	import { SchedulerLike } from './types';
 	import { Subscriber } from './Subscriber';
@@ -1815,7 +1815,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/ReplaySubject' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/AsyncSubject' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/AsyncSubject' {
 	import { Subject } from './Subject';
 	import { Subscriber } from './Subscriber';
 	import { Subscription } from './Subscription';
@@ -1837,7 +1837,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/AsyncSubject' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/Scheduler' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/Scheduler' {
 	import { Action } from './scheduler/Action';
 	import { Subscription } from './Subscription';
 	import { SchedulerLike, SchedulerAction } from './types';
@@ -1899,7 +1899,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/Scheduler' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/Action' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/scheduler/Action' {
 	import { Scheduler } from '../Scheduler';
 	import { Subscription } from '../Subscription';
 	import { SchedulerAction } from '../types';
@@ -1933,7 +1933,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/Action' 
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/AsyncScheduler' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/scheduler/AsyncScheduler' {
 	import { Scheduler } from '../Scheduler';
 	import { Action } from './Action';
 	import { AsyncAction } from './AsyncAction';
@@ -1963,7 +1963,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/AsyncSch
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/AsyncAction' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/scheduler/AsyncAction' {
 	import { Action } from './Action';
 	import { SchedulerAction } from '../types';
 	import { Subscription } from '../Subscription';
@@ -1995,7 +1995,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/AsyncAct
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/AsapScheduler' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/scheduler/AsapScheduler' {
 	import { AsyncAction } from './AsyncAction';
 	import { AsyncScheduler } from './AsyncScheduler';
 	export class AsapScheduler extends AsyncScheduler {
@@ -2003,7 +2003,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/AsapSche
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/asap' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/scheduler/asap' {
 	import { AsapScheduler } from './AsapScheduler';
 	/**
 	 *
@@ -2045,7 +2045,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/asap' {
 	export const asap: AsapScheduler;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/async' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/scheduler/async' {
 	import { AsyncScheduler } from './AsyncScheduler';
 	/**
 	 *
@@ -2100,13 +2100,13 @@ declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/async' {
 	export const async: AsyncScheduler;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/QueueScheduler' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/scheduler/QueueScheduler' {
 	import { AsyncScheduler } from './AsyncScheduler';
 	export class QueueScheduler extends AsyncScheduler {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/queue' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/scheduler/queue' {
 	import { QueueScheduler } from './QueueScheduler';
 	/**
 	 *
@@ -2177,7 +2177,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/queue' {
 	export const queue: QueueScheduler;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/AnimationFrameScheduler' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/scheduler/AnimationFrameScheduler' {
 	import { AsyncAction } from './AsyncAction';
 	import { AsyncScheduler } from './AsyncScheduler';
 	export class AnimationFrameScheduler extends AsyncScheduler {
@@ -2185,7 +2185,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/Animatio
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/animationFrame' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/scheduler/animationFrame' {
 	import { AnimationFrameScheduler } from './AnimationFrameScheduler';
 	/**
 	 *
@@ -2225,7 +2225,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/animatio
 	export const animationFrame: AnimationFrameScheduler;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/VirtualTimeScheduler' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/scheduler/VirtualTimeScheduler' {
 	import { AsyncAction } from './AsyncAction';
 	import { Subscription } from '../Subscription';
 	import { AsyncScheduler } from './AsyncScheduler';
@@ -2261,7 +2261,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/scheduler/VirtualT
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/Notification' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/Notification' {
 	import { PartialObserver } from './types';
 	import { Observable } from './Observable';
 	/**
@@ -2352,7 +2352,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/Notification' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/util/pipe' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/util/pipe' {
 	import { UnaryFunction } from '../types';
 	export function pipe<T>(): UnaryFunction<T, T>;
 	export function pipe<T, A>(fn1: UnaryFunction<T, A>): UnaryFunction<T, A>;
@@ -2369,15 +2369,15 @@ declare module '@my-project/trello/node_modules/rxjs/internal/util/pipe' {
 	export function pipeFromArray<T, R>(fns: Array<UnaryFunction<T, R>>): UnaryFunction<T, R>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/util/noop' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/util/noop' {
 	export function noop(): void;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/util/identity' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/util/identity' {
 	export function identity<T>(x: T): T;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/util/isObservable' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/util/isObservable' {
 	import { Observable } from '../Observable';
 	/**
 	 * Tests to see if the object is an RxJS {@link Observable}
@@ -2386,7 +2386,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/util/isObservable'
 	export function isObservable<T>(obj: any): obj is Observable<T>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/util/ArgumentOutOfRangeError' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/util/ArgumentOutOfRangeError' {
 	export interface ArgumentOutOfRangeError extends Error {
 	}
 	export interface ArgumentOutOfRangeErrorCtor {
@@ -2405,7 +2405,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/util/ArgumentOutOf
 	export const ArgumentOutOfRangeError: ArgumentOutOfRangeErrorCtor;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/util/EmptyError' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/util/EmptyError' {
 	export interface EmptyError extends Error {
 	}
 	export interface EmptyErrorCtor {
@@ -2424,7 +2424,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/util/EmptyError' {
 	export const EmptyError: EmptyErrorCtor;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/util/ObjectUnsubscribedError' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/util/ObjectUnsubscribedError' {
 	export interface ObjectUnsubscribedError extends Error {
 	}
 	export interface ObjectUnsubscribedErrorCtor {
@@ -2442,7 +2442,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/util/ObjectUnsubsc
 	export const ObjectUnsubscribedError: ObjectUnsubscribedErrorCtor;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/util/UnsubscriptionError' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/util/UnsubscriptionError' {
 	export interface UnsubscriptionError extends Error {
 	    readonly errors: any[];
 	}
@@ -2456,7 +2456,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/util/Unsubscriptio
 	export const UnsubscriptionError: UnsubscriptionErrorCtor;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/util/TimeoutError' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/util/TimeoutError' {
 	export interface TimeoutError extends Error {
 	}
 	export interface TimeoutErrorCtor {
@@ -2472,7 +2472,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/util/TimeoutError'
 	export const TimeoutError: TimeoutErrorCtor;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/bindCallback' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/bindCallback' {
 	import { SchedulerLike } from '../types';
 	import { Observable } from '../Observable';
 	/** @deprecated resultSelector is no longer supported, use a mapping function. */
@@ -2512,7 +2512,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/bindCal
 	export function bindCallback(callbackFunc: Function, scheduler?: SchedulerLike): (...args: any[]) => Observable<any>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/bindNodeCallback' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/bindNodeCallback' {
 	import { Observable } from '../Observable';
 	import { SchedulerLike } from '../types';
 	/** @deprecated resultSelector is deprecated, pipe to map instead */
@@ -2550,7 +2550,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/bindNod
 	export function bindNodeCallback(callbackFunc: Function, scheduler?: SchedulerLike): (...args: any[]) => Observable<any[]>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/InnerSubscriber' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/InnerSubscriber' {
 	import { Subscriber } from './Subscriber';
 	import { OuterSubscriber } from './OuterSubscriber';
 	/**
@@ -2570,7 +2570,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/InnerSubscriber' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/OuterSubscriber' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/OuterSubscriber' {
 	import { Subscriber } from './Subscriber';
 	import { InnerSubscriber } from './InnerSubscriber';
 	/**
@@ -2585,7 +2585,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/OuterSubscriber' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/combineLatest' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/combineLatest' {
 	import { Observable } from '../Observable';
 	import { ObservableInput, SchedulerLike, ObservedValueOf } from '../types';
 	import { Subscriber } from '../Subscriber';
@@ -2688,7 +2688,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/combine
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/concat' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/concat' {
 	import { Observable } from '../Observable';
 	import { ObservableInput, SchedulerLike, ObservedValueOf } from '../types';
 	/** @deprecated Use {@link scheduled} and {@link concatAll} (e.g. `scheduled([o1, o2, o3], scheduler).pipe(concatAll())`) */
@@ -2717,7 +2717,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/concat'
 	export function concat<R>(...observables: (ObservableInput<any> | SchedulerLike)[]): Observable<R>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/defer' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/defer' {
 	import { Observable } from '../Observable';
 	import { ObservedValueOf, ObservableInput } from '../types';
 	/**
@@ -2772,7 +2772,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/defer' 
 	export function defer<O extends ObservableInput<any>>(observableFactory: () => O | void): Observable<ObservedValueOf<O>>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/empty' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/empty' {
 	import { Observable } from '../Observable';
 	import { SchedulerLike } from '../types';
 	/**
@@ -2835,7 +2835,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/empty' 
 	export function empty(scheduler?: SchedulerLike): Observable<never>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/forkJoin' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/forkJoin' {
 	import { Observable } from '../Observable';
 	import { ObservableInput, ObservedValuesFromArray, ObservedValueOf, SubscribableOrPromise } from '../types';
 	/** @deprecated Use the version that takes an array of Observables instead */
@@ -2867,7 +2867,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/forkJoi
 	export function forkJoin<T>(...sources: ObservableInput<T>[]): Observable<T[]>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/from' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/from' {
 	import { Observable } from '../Observable';
 	import { ObservableInput, SchedulerLike, ObservedValueOf } from '../types';
 	export function from<O extends ObservableInput<any>>(input: O): Observable<ObservedValueOf<O>>;
@@ -2875,7 +2875,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/from' {
 	export function from<O extends ObservableInput<any>>(input: O, scheduler: SchedulerLike): Observable<ObservedValueOf<O>>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/fromEvent' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/fromEvent' {
 	import { Observable } from '../Observable';
 	export interface NodeStyleEventEmitter {
 	    addListener: (eventName: string | symbol, handler: NodeEventHandler) => this;
@@ -2913,7 +2913,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/fromEve
 	export function fromEvent<T>(target: FromEventTarget<T>, eventName: string, options: EventListenerOptions, resultSelector: (...args: any[]) => T): Observable<T>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/fromEventPattern' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/fromEventPattern' {
 	import { Observable } from '../Observable';
 	import { NodeEventHandler } from './fromEvent';
 	export function fromEventPattern<T>(addHandler: (handler: NodeEventHandler) => any, removeHandler?: (handler: NodeEventHandler, signal?: any) => void): Observable<T>;
@@ -2921,7 +2921,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/fromEve
 	export function fromEventPattern<T>(addHandler: (handler: NodeEventHandler) => any, removeHandler?: (handler: NodeEventHandler, signal?: any) => void, resultSelector?: (...args: any[]) => T): Observable<T>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/generate' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/generate' {
 	import { Observable } from '../Observable';
 	import { SchedulerLike } from '../types';
 	export type ConditionFunc<S> = (state: S) => boolean;
@@ -3155,7 +3155,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/generat
 	export function generate<T, S>(options: GenerateOptions<T, S>): Observable<T>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/interval' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/interval' {
 	import { Observable } from '../Observable';
 	import { SchedulerLike } from '../types';
 	/**
@@ -3209,7 +3209,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/interva
 	export function interval(period?: number, scheduler?: SchedulerLike): Observable<number>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/merge' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/merge' {
 	import { Observable } from '../Observable';
 	import { ObservableInput, SchedulerLike } from '../types';
 	/** @deprecated use {@link scheduled} and {@link mergeAll} (e.g. `scheduled([ob1, ob2, ob3], scheduled).pipe(mergeAll())*/
@@ -3256,7 +3256,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/merge' 
 	export function merge<T, R>(...observables: (ObservableInput<any> | SchedulerLike | number)[]): Observable<R>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/never' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/never' {
 	import { Observable } from '../Observable';
 	/**
 	 * An Observable that emits no items to the Observer and never completes.
@@ -3295,7 +3295,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/never' 
 	export function never(): Observable<never>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/of' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/of' {
 	import { SchedulerLike } from '../types';
 	import { Observable } from '../Observable';
 	/** @deprecated use {@link scheduled} instead `scheduled([a, b, c], scheduler)` */
@@ -3329,7 +3329,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/of' {
 	export function of<T>(...args: T[]): Observable<T>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/onErrorResumeNext' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/onErrorResumeNext' {
 	import { Observable } from '../Observable';
 	import { ObservableInput } from '../types';
 	export function onErrorResumeNext<R>(v: ObservableInput<R>): Observable<R>;
@@ -3341,7 +3341,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/onError
 	export function onErrorResumeNext<R>(array: ObservableInput<any>[]): Observable<R>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/pairs' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/pairs' {
 	import { Observable } from '../Observable';
 	import { SchedulerAction, SchedulerLike } from '../types';
 	import { Subscriber } from '../Subscriber';
@@ -3405,7 +3405,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/pairs' 
 	}): void;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/partition' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/partition' {
 	import { ObservableInput } from '../types';
 	import { Observable } from '../Observable';
 	/**
@@ -3462,7 +3462,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/partiti
 	export function partition<T>(source: ObservableInput<T>, predicate: (value: T, index: number) => boolean, thisArg?: any): [Observable<T>, Observable<T>];
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/race' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/race' {
 	import { Observable } from '../Observable';
 	import { Operator } from '../Operator';
 	import { Subscriber } from '../Subscriber';
@@ -3504,7 +3504,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/race' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/range' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/range' {
 	import { SchedulerAction, SchedulerLike } from '../types';
 	import { Observable } from '../Observable';
 	/**
@@ -3546,7 +3546,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/range' 
 	export function dispatch(this: SchedulerAction<any>, state: any): void;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/timer' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/timer' {
 	import { Observable } from '../Observable';
 	import { SchedulerLike } from '../types';
 	/**
@@ -3602,7 +3602,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/timer' 
 	export function timer(dueTime?: number | Date, periodOrScheduler?: number | SchedulerLike, scheduler?: SchedulerLike): Observable<number>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/using' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/using' {
 	import { Observable } from '../Observable';
 	import { Unsubscribable, ObservableInput } from '../types';
 	/**
@@ -3636,7 +3636,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/using' 
 	export function using<T>(resourceFactory: () => Unsubscribable | void, observableFactory: (resource: Unsubscribable | void) => ObservableInput<T> | void): Observable<T>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/observable/zip' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/observable/zip' {
 	import { Observable } from '../Observable';
 	import { Operator } from '../Operator';
 	import { ObservableInput, ObservedValueOf } from '../types';
@@ -3691,7 +3691,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/observable/zip' {
 	}
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/scheduled/scheduled' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/scheduled/scheduled' {
 	import { ObservableInput, SchedulerLike, Observable } from 'rxjs';
 	/**
 	 * Converts from a common {@link ObservableInput} type to an observable where subscription and emissions
@@ -3707,7 +3707,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/scheduled/schedule
 	export function scheduled<T>(input: ObservableInput<T>, scheduler: SchedulerLike): Observable<T>;
 
 }
-declare module '@my-project/trello/node_modules/rxjs/internal/config' {
+declare module '@my-project/module-view/node_modules/rxjs/internal/config' {
 	/**
 	 * The global configuration object for RxJS, used to configure things
 	 * like what Promise contructor should used to create Promises
@@ -3730,7 +3730,7 @@ declare module '@my-project/trello/node_modules/rxjs/internal/config' {
 	};
 
 }
-declare module '@my-project/trello/node_modules/rxjs/index' {
+declare module '@my-project/module-view/node_modules/rxjs/index' {
 	export { Observable } from './internal/Observable';
 	export { ConnectableObservable } from './internal/observable/ConnectableObservable';
 	export { GroupedObservable } from './internal/operators/groupBy';
@@ -3790,7 +3790,7 @@ declare module '@my-project/trello/node_modules/rxjs/index' {
 	export { config } from './internal/config';
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/tokens' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/decorators/tokens' {
 	import { CSSResult } from '../lit-element/lib/css-tag';
 	import { CSSResultArray } from '../lit-element/lit-element';
 	import { Subscription } from 'rxjs';
@@ -3808,7 +3808,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/t
 	}
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/component.decorator' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/decorators/component.decorator' {
 	import { CSSResult } from '../lit-element/lib/css-tag';
 	import { TemplateResult } from '../lit-html/lit-html';
 	import { RXDIElement } from './tokens';
@@ -3840,37 +3840,37 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/c
 	export {};
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/hooks/on-before' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/decorators/hooks/on-before' {
 	export interface OnBefore {
 	    OnBefore(): void;
 	}
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/hooks/on-destroy' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/decorators/hooks/on-destroy' {
 	export interface OnDestroy {
 	    OnDestroy(): void;
 	}
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/hooks/on-init' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/decorators/hooks/on-init' {
 	export interface OnInit {
 	    OnInit(): void;
 	}
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/hooks/on-update' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/decorators/hooks/on-update' {
 	export interface OnUpdate {
 	    OnUpdate(): void;
 	}
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/hooks/on-update-first' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/decorators/hooks/on-update-first' {
 	export interface OnUpdateFirst {
 	    OnUpdateFirst(): void;
 	}
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/hooks/index' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/decorators/hooks/index' {
 	export * from './on-before';
 	export * from './on-destroy';
 	export * from './on-init';
@@ -3878,7 +3878,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/h
 	export * from './on-update-first';
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/test.helpers' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/decorators/test.helpers' {
 	import { TemplateResult } from '../lit-html/lit-html';
 	import { RXDIElement } from './tokens';
 	export function setElement<T>(element: T, container: HTMLElement): T;
@@ -3886,7 +3886,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/t
 	export function getTemplateResult(component: RXDIElement): TemplateResult;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/index' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/decorators/index' {
 	export * from './template-observable';
 	export * from './component.decorator';
 	export * from './hooks/index';
@@ -3894,7 +3894,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/i
 	export * from './test.helpers';
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-element/lib/updating-element' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-element/lib/updating-element' {
 	import { RXDIElement } from '../../decorators/index'; global {
 	    var JSCompiler_renameProperty: <P extends PropertyKey>(prop: P, _obj: unknown) => P;
 	    interface Window {
@@ -4221,7 +4221,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-element/
 	export {};
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-element/lib/decorators' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-element/lib/decorators' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -4300,7 +4300,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-element/
 	export {};
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib/shady-render' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-html/lib/shady-render' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -4379,7 +4379,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-html/lib
 	export const render: (result: TemplateResult, container: Element | DocumentFragment | ShadowRoot, options: ShadyRenderOptions) => void;
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-element/lit-element' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-element/lit-element' {
 	/**
 	 * @license
 	 * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -4480,14 +4480,14 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-element/
 	}
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/mixins/index' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/mixins/index' {
 	import { LitElement } from '../lit-element/lit-element';
 	export class BaseComponent extends LitElement {
 	    createRenderRoot(): this;
 	}
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-rx/index' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/lit-rx/index' {
 	import { Part } from '../lit-html/lit-html';
 	import { Subscribable } from 'rxjs'; type SubscribableOrPromiseLike<T> = Subscribable<T> | PromiseLike<T>;
 	/**
@@ -4502,7 +4502,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-rx/index
 	export {};
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/index' {
+declare module '@my-project/module-view/node_modules/@rxdi/lit-html/dist/index' {
 	export * from './mixins/index';
 	export * from './decorators/index';
 	export * from './lit-html/lit-html';
@@ -4510,18 +4510,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/index' {
 	export * from './lit-element/lit-element';
 
 }
-declare module '@my-project/trello/trello/trello.component' {
-	import { LitElement, OnInit, OnDestroy, OnUpdate } from '@rxdi/lit-html';
-	import '@my-project/trello/tailwind/tailwind.component';
-	/**
-	 * @customElement trello-component
-	 */
-	export class TrelloComponent extends LitElement implements OnInit, OnDestroy, OnUpdate {
-	    private name;
-	    private divs;
-	    OnInit(): void;
-	    OnDestroy(): void;
-	    OnUpdate(): void;
-	}
+declare module '@my-project/module-view/module-view.component' {
+	export {};
 
 }

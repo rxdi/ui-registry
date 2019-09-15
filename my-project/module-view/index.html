@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<div id="meta-rxdi-ipfs-module" style="visibility:hidden;z-index:-10000;position:absolute;">
+    <!--meta-rxdi-ipfs-module-->
+    {
+"name": "@my-project/module-view",
+"module": "QmVZZtAQcmeCi5uscR6fnx1ZVC36UoofwLvydJ6siUqegy",
+"createdAt": "2019-09-15T14:13:35.463Z",
+"typings": "QmeMhhrqtpGTjeyBjSuB5jj36QYfZczmwZNuQkdTFFoLBV",
+"message": "QmU12kpvFdsuupQv3ypwPa74mb77kqY1GKYGnScavjh9NU",
+"previous": [
+"QmXzTVEhjmMhph8AW4cRavibf2sdUVj5GmP8UQEmea6V7u",
+"QmacDECDtka7r9Ps3RgGCXJnsUAmV8dGRvN6ZJLaVyarvg",
+"QmfARNHZLDcLLss86mPucUawNcPiHi3vA5LV8MXzAhaeyw",
+"Qme9PyFPXJ5RzUQcVhTN6bKLvfAGVhyxckWbcSgDSgUZvr",
+"QmUT1C5PmXdxnnQbdk9HpDwxfiRRdgDLux57bTxK4ooyBw",
+"QmZKiFhRX7oKq4KBnbkQPrBw3rTtbyEsonC8pVdx6zBNkf",
+"QmTc3zhVemyeDEQik92GX2cCXHycMVLjMo4iPE44dHSpRF",
+"QmbWDPf1NZAXR8P8R8j7CggvwBMfBLVRKG9T1r4NKo1M63",
+"QmRTGbx79ULB8WVejcShLSncEzKG8t2cHoGD1WSEULxpmn",
+"QmUknCAd7JLDtwgRNBrVdN4zM712WJPZ75i8T7NeG9EbRB",
+"QmSFYGeySFVsqoAaJnAk2SYau4bD5TxsKdbhyztR5oiMdU",
+"QmabS9qu7pLL9BFAYwJFoBNjoX8z66hDr6VhkLAbxmxsPg",
+"Qmb4yTgETcGAmjzXKYEAKJoLh1cC9jcNdP5LqCF2iiFvUi",
+"Qmbi8iLz2F275eb542xNUZGV6WP5bJGiHerVs4KGgWDccC",
+"QmUp5uxvJ15QihAPqLN6AkMK2nf2Tks6eadofiMoSpQJnr",
+"QmWT1bhZnzmCgPf4VT18R9s7Q1bYjay6TkwzEiocmxMsVY",
+"Qmex2SrHsDNMukcfNmihFd5yosY54TevGPCec3KZXrzMGv",
+"QmS1FjPVvguHQdoBhWvsHGoTcmWf3BLPEEFaCLn4Q8DCEa",
+"QmaN6gTZjYE8Ak9RvPAua3KaTyzSX9k6AespD2peuMK2SY",
+"QmNczt97zQkoVNVVCvXVzcUrDTAfe4qBDMqyU1SdUB6gfw"
+]
+}
+    <!--meta-rxdi-ipfs-module-->
+  </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no"
+    />
+    <title>@rxdi client side example</title>
+    <meta name="theme-color" content="#33383a" />
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        color: #f8f8f8;
+        font-family: 'Roboto', sans-serif;
+        background-color: #1c1f24;
+        overflow-y: scroll;
+      }
+      a {
+        color: cornflowerblue;
+      }
+    </style>
+    <base href="/" />
+    <!-- iOS -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-title" content="Expenses" />
+
+    <script async src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script async>
+      window.onerror = (text, url, lineNumber) => {
+        Swal.fire({
+          type: 'error',
+          title: 'Oops...',
+          text,
+          footer: `<p><strong>File:</strong> ${url}</p>&nbsp<p><strong>Line:</strong> ${lineNumber}</p>`
+        });
+        return true;
+      };
+    </script>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script src="./module-view.component.ts"></script>
+  </body>
+</html>

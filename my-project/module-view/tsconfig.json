@@ -27,6 +27,6 @@
         "."
     ],
     "files": [
-        "trello.component.ts"
+        "module-view.component.ts"
     ]
 }

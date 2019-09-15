@@ -1,0 +1,143 @@
+┌────┬──────────┬──────────┬──────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│[40m    [49m│[40m [32mStatus[39m   [49m│[40m [32mFile Type[39m[49m│[40m [32mSize[39m         [49m│[40m [32mGateway[39m                                                                                                                                     [49m│
+├────┼──────────┼──────────┼──────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Bundle   │ 603957 bytes │ https://ipfs.io/ipfs/QmQWUQE39xVFME587kS14oByL9gNMMkCUATKKEqv1KbDqS                                                                         │
+├────┼──────────┼──────────┼──────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Typings  │ 225707 bytes │ https://ipfs.io/ipfs/QmeMhhrqtpGTjeyBjSuB5jj36QYfZczmwZNuQkdTFFoLBV                                                                         │
+├────┼──────────┼──────────┼──────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Module   │ 2754 bytes   │ https://ipfs.io/ipfs/QmYiTwvnMg1sqvEdejZRTf93WUNY42ax7vRMRJoPNdF6Gj                                                                         │
+└────┴──────────┴──────────┴──────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+1568620735916,Bundling Started!
+
+./module-view/build
+✨  [32m[1mBuilt in 1.18s.[22m[39m
+
+[2mmodule-view/build/[22m[36m[1mmodule-view.js.map[22m[39m                                                            [1m[33m⚠️  1.87 MB[39m[22m    [32m[1m275ms[22m[39m
+
+[2mmodule-view/build/[22m[36m[1mmodule-view.js[22m[39m                                                                 [1m[35m589.61 KB[39m[22m    [32m[1m810ms[22m[39m
+├── [2mmodule-view/node_modules/systemjs/dist/[22m[0msystem.src.js[0m                                          [2m[35m47.39 KB[39m[22m     [2m[32m84ms[39m[22m
+├── [2mmodule-view/node_modules/rxjs/_esm5/operators/[22m[0mindex.js[0m                                        [2m[35m23.39 KB[39m[22m    [2m[32m169ms[39m[22m
+├── [2m../node_modules/buffer/[22m[0mindex.js[0m                                                               [2m[35m19.72 KB[39m[22m     [2m[32m39ms[39m[22m
+├── [2mmodule-view/node_modules/rxjs/_esm5/[22m[0mindex.js[0m                                                   [2m[35m12.2 KB[39m[22m     [2m[32m80ms[39m[22m
+├── [2m../node_modules/node-libs-browser/node_modules/readable-stream/lib/[22m[0m_stream_readable.js[0m        [2m[35m11.89 KB[39m[22m     [2m[32m24ms[39m[22m
+├── [2mmodule-view/node_modules/reflect-metadata/[22m[0mReflect.js[0m                                            [2m[35m9.5 KB[39m[22m    [2m[32m336ms[39m[22m
+├── [2mmodule-view/node_modules/@rxdi/core/dist/services/external-importer/[22m[0mexternal-importer.js[0m       [2m[35m9.18 KB[39m[22m    [2m[32m291ms[39m[22m
+├── [2m../node_modules/node-libs-browser/node_modules/readable-stream/lib/[22m[0m_stream_writable.js[0m         [2m[35m8.02 KB[39m[22m     [2m[32m16ms[39m[22m
+├── [2mmodule-view/node_modules/@rxdi/core/dist/services/bootstrap/[22m[0mbootstrap.service.js[0m               [2m[35m7.65 KB[39m[22m    [2m[32m223ms[39m[22m
+├── [2m../node_modules/url/[22m[0murl.js[0m                                                                     [2m[35m7.62 KB[39m[22m     [2m[32m12ms[39m[22m
+└── [2m+ 351 more assets[22m                                                                       
+1568620738107,Bundling finished!
+
+1568620738108,Adding commit message dadada...
+
+1568620738116,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmS7p2zWKDPVMSEz2poYfkgg5yae4yBoHAeT5G2gmyRDbR
+1568620738117,Commit message added...
+
+1568620738129,Reading bundle ./module-view/build/module-view.js finished!
+
+1568620738142,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmQWUQE39xVFME587kS14oByL9gNMMkCUATKKEqv1KbDqS
+1568620738143,Bundle added to ipfs ./module-view/build/module-view.js
+
+1568620738143,Typescript definitions merge started!
+
+1568620738143,Typescript merging definitions started in child process...
+
+1568620740382,Child process exited with code 0
+
+1568620740383,Typescript definitions merge finished! Reading file...
+
+1568620740388,Typescript definitions read finished! Adding to IPFS...
+
+1568620740397,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmeMhhrqtpGTjeyBjSuB5jj36QYfZczmwZNuQkdTFFoLBV
+1568620740397,Typescript definitions added to IPFS! Adding module configuration...
+
+1568620740400,Reactive file present reactive.json package dependencies will be taken from it
+1568620740405,Current module before deploy {"name":"@my-project/module-view","module":"QmQWUQE39xVFME587kS14oByL9gNMMkCUATKKEqv1KbDqS","createdAt":"2019-09-16T07:59:00.399Z","typings":"QmeMhhrqtpGTjeyBjSuB5jj36QYfZczmwZNuQkdTFFoLBV","message":"QmS7p2zWKDPVMSEz2poYfkgg5yae4yBoHAeT5G2gmyRDbR","previous":["QmUknCAd7JLDtwgRNBrVdN4zM712WJPZ75i8T7NeG9EbRB","QmSFYGeySFVsqoAaJnAk2SYau4bD5TxsKdbhyztR5oiMdU","QmabS9qu7pLL9BFAYwJFoBNjoX8z66hDr6VhkLAbxmxsPg","Qmb4yTgETcGAmjzXKYEAKJoLh1cC9jcNdP5LqCF2iiFvUi","Qmbi8iLz2F275eb542xNUZGV6WP5bJGiHerVs4KGgWDccC","QmUp5uxvJ15QihAPqLN6AkMK2nf2Tks6eadofiMoSpQJnr","QmWT1bhZnzmCgPf4VT18R9s7Q1bYjay6TkwzEiocmxMsVY","Qmex2SrHsDNMukcfNmihFd5yosY54TevGPCec3KZXrzMGv","QmS1FjPVvguHQdoBhWvsHGoTcmWf3BLPEEFaCLn4Q8DCEa","QmaN6gTZjYE8Ak9RvPAua3KaTyzSX9k6AespD2peuMK2SY","QmNczt97zQkoVNVVCvXVzcUrDTAfe4qBDMqyU1SdUB6gfw","Qmdg43aeiokLCyWXjF45WjkVyaB3xxZR7RL5DZwjVbm4bi","QmTAEJYDcs5eMH2Fuvu5caxQ6Sm8KS95tHTQqTczbNBXRS","QmeWz57k2VimGMCL8RYG5jDh5ScyPwrAvWAcDFfKvY6NCR","QmcCSSyjxN3LWpgnUVLjSGL4rzoARVT5ahCufSDTGnXad7","QmYgLcL5JwKdihgpaCoj9GkSADzayjHP2MHpBhFVrbgd1y","QmQt3BgX5zyLZTgHQnadS5FvoPRASnY8b7qVywAMZnoiDY","QmXMsjaWvPMVoUGjknRn4G7WvPcUYqTQzW4oxpmjmfBZp3","QmSeZXXzu1NApUwWrBL4TYbLQkZRkFcA5JbVu7fTfMiGT2","QmYiTwvnMg1sqvEdejZRTf93WUNY42ax7vRMRJoPNdF6Gj"]}
+✨  [32m[1mBuilt in 108ms.[22m[39m
+
+[2mindex/[22m[36m[1mindex.html[22m[39m    [1m[35m144 B[39m[22m    [32m[1m1ms[22m[39m
+1568620741723,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmW7RBphFjXnMfhCPy9TT8Fy66vnyMrrdpEf842oVevkp9
+[object Object],[object Object],[object Object]
+1568620741727,Module configuration added to ipfs!
+
+1568620741733,Module saved to persistant history!
+┌──────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────────────────────────────────────────────────────────────────────┐
+│[40m                                     [32mPreviews versions[39m                                    [49m│[40m                                           [32mGateway[39m                                         [49m│
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmSFYGeySFVsqoAaJnAk2SYau4bD5TxsKdbhyztR5oiMdU                                           │     https://ipfs.io/ipfs/QmSFYGeySFVsqoAaJnAk2SYau4bD5TxsKdbhyztR5oiMdU                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmabS9qu7pLL9BFAYwJFoBNjoX8z66hDr6VhkLAbxmxsPg                                           │     https://ipfs.io/ipfs/QmabS9qu7pLL9BFAYwJFoBNjoX8z66hDr6VhkLAbxmxsPg                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ Qmb4yTgETcGAmjzXKYEAKJoLh1cC9jcNdP5LqCF2iiFvUi                                           │     https://ipfs.io/ipfs/Qmb4yTgETcGAmjzXKYEAKJoLh1cC9jcNdP5LqCF2iiFvUi                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ Qmbi8iLz2F275eb542xNUZGV6WP5bJGiHerVs4KGgWDccC                                           │     https://ipfs.io/ipfs/Qmbi8iLz2F275eb542xNUZGV6WP5bJGiHerVs4KGgWDccC                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmUp5uxvJ15QihAPqLN6AkMK2nf2Tks6eadofiMoSpQJnr                                           │     https://ipfs.io/ipfs/QmUp5uxvJ15QihAPqLN6AkMK2nf2Tks6eadofiMoSpQJnr                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmWT1bhZnzmCgPf4VT18R9s7Q1bYjay6TkwzEiocmxMsVY                                           │     https://ipfs.io/ipfs/QmWT1bhZnzmCgPf4VT18R9s7Q1bYjay6TkwzEiocmxMsVY                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ Qmex2SrHsDNMukcfNmihFd5yosY54TevGPCec3KZXrzMGv                                           │     https://ipfs.io/ipfs/Qmex2SrHsDNMukcfNmihFd5yosY54TevGPCec3KZXrzMGv                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmS1FjPVvguHQdoBhWvsHGoTcmWf3BLPEEFaCLn4Q8DCEa                                           │     https://ipfs.io/ipfs/QmS1FjPVvguHQdoBhWvsHGoTcmWf3BLPEEFaCLn4Q8DCEa                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmaN6gTZjYE8Ak9RvPAua3KaTyzSX9k6AespD2peuMK2SY                                           │     https://ipfs.io/ipfs/QmaN6gTZjYE8Ak9RvPAua3KaTyzSX9k6AespD2peuMK2SY                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmNczt97zQkoVNVVCvXVzcUrDTAfe4qBDMqyU1SdUB6gfw                                           │     https://ipfs.io/ipfs/QmNczt97zQkoVNVVCvXVzcUrDTAfe4qBDMqyU1SdUB6gfw                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ Qmdg43aeiokLCyWXjF45WjkVyaB3xxZR7RL5DZwjVbm4bi                                           │     https://ipfs.io/ipfs/Qmdg43aeiokLCyWXjF45WjkVyaB3xxZR7RL5DZwjVbm4bi                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmTAEJYDcs5eMH2Fuvu5caxQ6Sm8KS95tHTQqTczbNBXRS                                           │     https://ipfs.io/ipfs/QmTAEJYDcs5eMH2Fuvu5caxQ6Sm8KS95tHTQqTczbNBXRS                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmeWz57k2VimGMCL8RYG5jDh5ScyPwrAvWAcDFfKvY6NCR                                           │     https://ipfs.io/ipfs/QmeWz57k2VimGMCL8RYG5jDh5ScyPwrAvWAcDFfKvY6NCR                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmcCSSyjxN3LWpgnUVLjSGL4rzoARVT5ahCufSDTGnXad7                                           │     https://ipfs.io/ipfs/QmcCSSyjxN3LWpgnUVLjSGL4rzoARVT5ahCufSDTGnXad7                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmYgLcL5JwKdihgpaCoj9GkSADzayjHP2MHpBhFVrbgd1y                                           │     https://ipfs.io/ipfs/QmYgLcL5JwKdihgpaCoj9GkSADzayjHP2MHpBhFVrbgd1y                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmQt3BgX5zyLZTgHQnadS5FvoPRASnY8b7qVywAMZnoiDY                                           │     https://ipfs.io/ipfs/QmQt3BgX5zyLZTgHQnadS5FvoPRASnY8b7qVywAMZnoiDY                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmXMsjaWvPMVoUGjknRn4G7WvPcUYqTQzW4oxpmjmfBZp3                                           │     https://ipfs.io/ipfs/QmXMsjaWvPMVoUGjknRn4G7WvPcUYqTQzW4oxpmjmfBZp3                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmSeZXXzu1NApUwWrBL4TYbLQkZRkFcA5JbVu7fTfMiGT2                                           │     https://ipfs.io/ipfs/QmSeZXXzu1NApUwWrBL4TYbLQkZRkFcA5JbVu7fTfMiGT2                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmYiTwvnMg1sqvEdejZRTf93WUNY42ax7vRMRJoPNdF6Gj                                           │     https://ipfs.io/ipfs/QmYiTwvnMg1sqvEdejZRTf93WUNY42ax7vRMRJoPNdF6Gj                   │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmPEA1FX68Ww3huTYMDu2u86cj5zcmzrvF8qu8F9eYJ9x8                                           │     https://ipfs.io/ipfs/QmPEA1FX68Ww3huTYMDu2u86cj5zcmzrvF8qu8F9eYJ9x8                   │
+└──────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────────────────────────────────────────────────────────────────────┐
+│[40m                                      [32mPreviews version[39m                                    [49m│[40m                                        [32mNext version[39m                                       [49m│
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmSFYGeySFVsqoAaJnAk2SYau4bD5TxsKdbhyztR5oiMdU                                           │     QmabS9qu7pLL9BFAYwJFoBNjoX8z66hDr6VhkLAbxmxsPg                                        │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ Qmb4yTgETcGAmjzXKYEAKJoLh1cC9jcNdP5LqCF2iiFvUi                                           │     Qmbi8iLz2F275eb542xNUZGV6WP5bJGiHerVs4KGgWDccC                                        │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmUp5uxvJ15QihAPqLN6AkMK2nf2Tks6eadofiMoSpQJnr                                           │     QmWT1bhZnzmCgPf4VT18R9s7Q1bYjay6TkwzEiocmxMsVY                                        │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ Qmex2SrHsDNMukcfNmihFd5yosY54TevGPCec3KZXrzMGv                                           │     QmS1FjPVvguHQdoBhWvsHGoTcmWf3BLPEEFaCLn4Q8DCEa                                        │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmaN6gTZjYE8Ak9RvPAua3KaTyzSX9k6AespD2peuMK2SY                                           │     QmNczt97zQkoVNVVCvXVzcUrDTAfe4qBDMqyU1SdUB6gfw                                        │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ Qmdg43aeiokLCyWXjF45WjkVyaB3xxZR7RL5DZwjVbm4bi                                           │     QmTAEJYDcs5eMH2Fuvu5caxQ6Sm8KS95tHTQqTczbNBXRS                                        │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmeWz57k2VimGMCL8RYG5jDh5ScyPwrAvWAcDFfKvY6NCR                                           │     QmcCSSyjxN3LWpgnUVLjSGL4rzoARVT5ahCufSDTGnXad7                                        │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmYgLcL5JwKdihgpaCoj9GkSADzayjHP2MHpBhFVrbgd1y                                           │     QmQt3BgX5zyLZTgHQnadS5FvoPRASnY8b7qVywAMZnoiDY                                        │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmXMsjaWvPMVoUGjknRn4G7WvPcUYqTQzW4oxpmjmfBZp3                                           │     QmSeZXXzu1NApUwWrBL4TYbLQkZRkFcA5JbVu7fTfMiGT2                                        │
+├──────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤
+│ QmYiTwvnMg1sqvEdejZRTf93WUNY42ax7vRMRJoPNdF6Gj                                           │     QmPEA1FX68Ww3huTYMDu2u86cj5zcmzrvF8qu8F9eYJ9x8                                        │
+└──────────────────────────────────────────────────────────────────────────────────────────┴───────────────────────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────────────────────────┐
+│[40m                                       [32mInstall command[39m                                      [49m│
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ rxdi i QmPEA1FX68Ww3huTYMDu2u86cj5zcmzrvF8qu8F9eYJ9x8                                      │
+└────────────────────────────────────────────────────────────────────────────────────────────┘
+┌────┬──────────┬──────────┬──────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│[40m    [49m│[40m [32mStatus[39m   [49m│[40m [32mFile Type[39m[49m│[40m [32mSize[39m         [49m│[40m [32mGateway[39m                                                                                                                                     [49m│
+├────┼──────────┼──────────┼──────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Bundle   │ 603957 bytes │ https://ipfs.io/ipfs/QmQWUQE39xVFME587kS14oByL9gNMMkCUATKKEqv1KbDqS                                                                         │
+├────┼──────────┼──────────┼──────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Typings  │ 225707 bytes │ https://ipfs.io/ipfs/QmeMhhrqtpGTjeyBjSuB5jj36QYfZczmwZNuQkdTFFoLBV                                                                         │
+├────┼──────────┼──────────┼──────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Module   │ 2754 bytes   │ https://ipfs.io/ipfs/QmPEA1FX68Ww3huTYMDu2u86cj5zcmzrvF8qu8F9eYJ9x8                                                                         │
+└────┴──────────┴──────────┴──────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
