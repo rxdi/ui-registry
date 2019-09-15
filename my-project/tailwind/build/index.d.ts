@@ -1132,10 +1132,10 @@ declare module '@my-project/tailwind/node_modules/@rxdi/lit-html/dist/decorators
 	    static styles?: CSSResult | CSSResultArray;
 	    static subscriptions?: Map<Subscription, Subscription>;
 	    getTemplateResult?(): TemplateResult;
-	    OnBefore?(): void;
-	    OnInit?(): void;
-	    OnUpdate?(): void;
-	    OnUpdateFirst?(): void;
+	    OnBefore?: () => void;
+	    OnInit?: () => void;
+	    OnUpdate?: () => void;
+	    OnUpdateFirst?: () => void;
 	}
 
 }

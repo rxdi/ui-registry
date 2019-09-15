@@ -10,7 +10,6 @@ import {
   queryAll,
   css
 } from '@rxdi/lit-html';
-import { RouteParams } from '@rxdi/router';
 import '../tailwind/tailwind.component';
 
 /**
@@ -344,8 +343,6 @@ import '../tailwind/tailwind.component';
 export class TrelloComponent extends LitElement
   implements OnInit, OnDestroy, OnUpdate {
   @property() private name: string;
-
-  @RouteParams() private params: any;
 
   @queryAll('div') private divs: HTMLElement[];
 

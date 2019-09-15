@@ -1,47 +1,59 @@
 ┌────┬──────────┬──────────┬─────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │[40m    [49m│[40m [32mStatus[39m   [49m│[40m [32mFile Type[39m[49m│[40m [32mSize[39m        [49m│[40m [32mGateway[39m                                                                                                                               [49m│
 ├────┼──────────┼──────────┼─────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Bundle   │ 16175 bytes │ https://ipfs.io/ipfs/QmQGKFj9pF8pcdffdnRZJ5rLg1rs8xiNh2D974ZG9FQsgU                                                                   │
+│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Bundle   │ 670800 bytes│ https://ipfs.io/ipfs/QmQQActEMDke4BGXso7f17ZQnkEHh9Bcp6V7DyYceZwSfh                                                                   │
 ├────┼──────────┼──────────┼─────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Typings  │ 102835 bytes│ https://ipfs.io/ipfs/QmQTChBeDFCWWfcdFxNpRfjuq5TXhpNvjTzskFfp1Mhm7L                                                                   │
+│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Typings  │ 76900 bytes │ https://ipfs.io/ipfs/QmaQs19At26D4gSfppPQT4qXsBhxvrUZjTu8wzwAVnkbBc                                                                   │
 ├────┼──────────┼──────────┼─────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Module   │ 350 bytes   │ https://ipfs.io/ipfs/QmV5bZGEcY1anNnmMKsKsaewmyhZ9adzqZiPrpjvRqz1d6                                                                   │
+│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Module   │ 728 bytes   │ https://ipfs.io/ipfs/QmUeG7W8FWU42WnF5jBJHP42eaHknJepgEvrKSqWQsb6Qx                                                                   │
 └────┴──────────┴──────────┴─────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-1568479286481,Bundling Started!
+1568542451610,Bundling Started!
 
 ./tailwind/build
-✨  [32m[1mBuilt in 220ms.[22m[39m
+✨  [32m[1mBuilt in 1.75s.[22m[39m
 
-[2mtailwind/build/[22m[36m[1mtailwind.js[22m[39m        [1m[35m1.82 KB[39m[22m    [32m[1m102ms[22m[39m
-[2mtailwind/build/[22m[36m[1mtailwind.js.map[22m[39m    [1m[35m1.02 KB[39m[22m      [32m[1m2ms[22m[39m
-1568479287709,Bundling finished!
+[2mtailwind/build/[22m[36m[1mtailwind.js.map[22m[39m                                                                [1m[33m⚠️  1.87 MB[39m[22m    [32m[1m450ms[22m[39m
 
-1568479287710,Adding commit message Init tailwind...
+[2mtailwind/build/[22m[36m[1mtailwind.js[22m[39m                                                                     [1m[35m597.04 KB[39m[22m    [32m[1m1.19s[22m[39m
+├── [2m../node_modules/systemjs/dist/[22m[0msystem.src.js[0m                                                 [2m[35m47.36 KB[39m[22m     [2m[32m38ms[39m[22m
+├── [2m../node_modules/rxjs/_esm5/operators/[22m[0mindex.js[0m                                                  [2m[35m24 KB[39m[22m    [2m[32m303ms[39m[22m
+├── [2m../node_modules/buffer/[22m[0mindex.js[0m                                                             [2m[35m19.72 KB[39m[22m     [2m[32m13ms[39m[22m
+├── [2m../node_modules/rxjs/_esm5/[22m[0mindex.js[0m                                                         [2m[35m12.52 KB[39m[22m    [2m[32m297ms[39m[22m
+├── [2m../node_modules/node-libs-browser/node_modules/readable-stream/lib/[22m[0m_stream_readable.js[0m      [2m[35m11.89 KB[39m[22m     [2m[32m13ms[39m[22m
+├── [2m../node_modules/reflect-metadata/[22m[0mReflect.js[0m                                                  [2m[35m9.51 KB[39m[22m     [2m[32m66ms[39m[22m
+├── [2m../node_modules/@rxdi/core/dist/services/external-importer/[22m[0mexternal-importer.js[0m              [2m[35m9.25 KB[39m[22m     [2m[32m61ms[39m[22m
+├── [2m../node_modules/node-libs-browser/node_modules/readable-stream/lib/[22m[0m_stream_writable.js[0m       [2m[35m8.02 KB[39m[22m     [2m[32m13ms[39m[22m
+├── [2m../node_modules/@rxdi/core/dist/services/bootstrap/[22m[0mbootstrap.service.js[0m                      [2m[35m7.76 KB[39m[22m     [2m[32m60ms[39m[22m
+├── [2m../node_modules/url/[22m[0murl.js[0m                                                                   [2m[35m7.62 KB[39m[22m     [2m[32m18ms[39m[22m
+└── [2m+ 351 more assets[22m                                                                     
+1568542454374,Bundling finished!
 
-1568479287935,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmebuXCsggLwGKrevdNxxfxhnHh6MY1z65XFdbrhGrdyX4
-1568479287936,Commit message added...
+1568542454375,Adding commit message init...
 
-1568479287940,Reading bundle ./tailwind/build/tailwind.js finished!
+1568542454383,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmU12kpvFdsuupQv3ypwPa74mb77kqY1GKYGnScavjh9NU
+1568542454384,Commit message added...
 
-1568479288172,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmbCFo9ptPMoJa7NHhnmn9v7YCzw2EZKdcD4KVwaPSH5bN
-1568479288172,Bundle added to ipfs ./tailwind/build/tailwind.js
+1568542454394,Reading bundle ./tailwind/build/tailwind.js finished!
 
-1568479288173,Typescript definitions merge started!
+1568542454825,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmQHao1zLYu2L63MBMSXx8TaSA5VZB3jyouV4KauKp1xZ4
+1568542454826,Bundle added to ipfs ./tailwind/build/tailwind.js
 
-1568479288175,Typescript merging definitions started in child process...
+1568542454827,Typescript definitions merge started!
 
-1568479290429,Child process exited with code 0
+1568542454827,Typescript merging definitions started in child process...
 
-1568479290429,Typescript definitions merge finished! Reading file...
+1568542457119,Child process exited with code 0
 
-1568479290434,Typescript definitions read finished! Adding to IPFS...
+1568542457120,Typescript definitions merge finished! Reading file...
 
-1568479290716,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmfESD7hamUFyLLdVxaXcSMjA9iQ9h4MB2YVREJnhcoeMp
-1568479290716,Typescript definitions added to IPFS! Adding module configuration...
+1568542457122,Typescript definitions read finished! Adding to IPFS...
 
-1568479290720,Reactive file present reactive.json package dependencies will be taken from it
-1568479290724,Current module before deploy {"name":"@my-project/tailwind","module":"QmbCFo9ptPMoJa7NHhnmn9v7YCzw2EZKdcD4KVwaPSH5bN","createdAt":"2019-09-14T16:41:30.719Z","typings":"QmfESD7hamUFyLLdVxaXcSMjA9iQ9h4MB2YVREJnhcoeMp","message":"QmebuXCsggLwGKrevdNxxfxhnHh6MY1z65XFdbrhGrdyX4","previous":[]}
-1568479290930,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmZfrerbVbndGSt2RiC9r4CwHn9A2Zh2hAQijtaGRSgkpD
-1568479290934,Module configuration added to ipfs!
+1568542457131,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmZ2uMh8otFNTpfaaCyuvLyRuYEvx984PwnGnsF5Penn2E
+1568542457132,Typescript definitions added to IPFS! Adding module configuration...
 
-1568479290942,Module saved to persistant history!
+1568542457134,Reactive file present reactive.json package dependencies will be taken from it
+1568542457139,Current module before deploy {"name":"@my-project/tailwind","module":"QmQHao1zLYu2L63MBMSXx8TaSA5VZB3jyouV4KauKp1xZ4","createdAt":"2019-09-15T10:14:17.134Z","typings":"QmZ2uMh8otFNTpfaaCyuvLyRuYEvx984PwnGnsF5Penn2E","message":"QmU12kpvFdsuupQv3ypwPa74mb77kqY1GKYGnScavjh9NU","previous":["QmZfrerbVbndGSt2RiC9r4CwHn9A2Zh2hAQijtaGRSgkpD","QmUiSgYJBxwk9AhA4ttpzhhXLrDuyPoU56oByGVE4FejaK"]}
+1568542457320,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmXc9iqxzdQkx6pFsdYqYifNqCmV2irXLp237WkKb1smPb
+1568542457321,Module configuration added to ipfs!
+
+1568542457326,Module saved to persistant history!

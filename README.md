@@ -6,11 +6,51 @@
 
 ## Setup
 
+## Local machine
+
+Install `@rxdi/deploy` global
+
+```bash
+npm i -g @rxdi/deploy
+```
+
+Execute command:
+```bash
+rxdi-deploy --graphiql-playground --webui --browser --ipfs-api-gateway 8080 --ipfs-api-port 5001
+```
+
+Current working directory will be used for serving files throught Web user interface 
+
+This setup will create following directories inide current user folder `~/` `~/.jsipfs`, `~/.rxdi`, `~/.packages` 
+
+### Docker
+
 Create `my-project` directory
 
 ```
 mkdir my-project
 ```
+
+#### Spawn `ipfs node` for Web and components bundling
+```bash
+docker run \
+  -p 8957:8957 \
+  -p 5001:5001 \
+  -p 8080:8080 \
+  -p 9300:9300 \
+  -v $(pwd)/my-project:/usr/src/app/files \
+  -v $(pwd)/packages:/usr/src/app/packages \
+  -v $(pwd)/.rxdi:/root/.rxdi \
+  -v $(pwd)/.jsipfs:/root/.jsipfs \
+  -i \
+  -t \
+  rxdi/deploy:latest \
+  --graphiql-playground \
+  --webui
+  --browser
+```
+
+#### Spawn `ipfs node` for Backend bundling
 
 ```bash
 docker run \
@@ -28,6 +68,7 @@ docker run \
   --graphiql-playground \
   --webui
 ```
+
 
 ## Open WebUI
 

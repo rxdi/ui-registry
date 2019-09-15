@@ -1,50 +1,59 @@
 ┌────┬──────────┬──────────┬─────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │[40m    [49m│[40m [32mStatus[39m   [49m│[40m [32mFile Type[39m[49m│[40m [32mSize[39m        [49m│[40m [32mGateway[39m                                                                                                                               [49m│
 ├────┼──────────┼──────────┼─────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Bundle   │ 16175 bytes │ https://ipfs.io/ipfs/QmQGKFj9pF8pcdffdnRZJ5rLg1rs8xiNh2D974ZG9FQsgU                                                                   │
+│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Bundle   │ 675016 bytes│ https://ipfs.io/ipfs/QmST9jKk4FG2aS977MY3U4fKVViYjn43eXqPUNS7SnhdNt                                                                   │
 ├────┼──────────┼──────────┼─────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Typings  │ 102835 bytes│ https://ipfs.io/ipfs/QmQTChBeDFCWWfcdFxNpRfjuq5TXhpNvjTzskFfp1Mhm7L                                                                   │
+│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Typings  │ 76900 bytes │ https://ipfs.io/ipfs/QmaQs19At26D4gSfppPQT4qXsBhxvrUZjTu8wzwAVnkbBc                                                                   │
 ├────┼──────────┼──────────┼─────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Module   │ 294 bytes   │ https://ipfs.io/ipfs/QmXdhmuNSyGfjP9gZcHHTNRiVokzEBUpzLbddEX63n8Ajd                                                                   │
+│[40m [32m✔[39m  [49m│[40m [32mSUCCESS[39m  [49m│ Module   │ 674 bytes   │ https://ipfs.io/ipfs/QmV8q3reEXq53YucVAktZ96JqsZTv1fqnnmqYUaJnLbi2R                                                                   │
 └────┴──────────┴──────────┴─────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-1568478842009,Bundling Started!
+1568542249029,Bundling Started!
 
-./my-component/build
-✨  [32m[1mBuilt in 335ms.[22m[39m
+./trello/build
+✨  [32m[1mBuilt in 8.76s.[22m[39m
 
-[2mmy-component/build/[22m[36m[1mtrello.js.map[22m[39m        [1m[35m16.28 KB[39m[22m      [32m[1m5ms[22m[39m
+[2mtrello/build/[22m[36m[1mtrello.js.map[22m[39m                                                                    [1m[33m⚠️  2.09 MB[39m[22m    [32m[1m735ms[22m[39m
 
-[2mmy-component/build/[22m[36m[1mtrello.js[22m[39m            [1m[35m15.79 KB[39m[22m    [32m[1m198ms[22m[39m
-├── [2mmy-component/[22m[0mtrello.component.ts[0m    [2m[35m13.92 KB[39m[22m    [2m[32m192ms[39m[22m
-└── [2mtailwind/[22m[0mtailwind.component.ts[0m        [2m[35m1.8 KB[39m[22m      [2m[32m1ms[39m[22m
-1568478843354,Bundling finished!
+[2mtrello/build/[22m[36m[1mtrello.js[22m[39m                                                                         [1m[35m654.89 KB[39m[22m    [32m[1m7.87s[22m[39m
+├── [2m../node_modules/systemjs/dist/[22m[0msystem.src.js[0m                                                 [2m[35m47.36 KB[39m[22m    [2m[32m2.98s[39m[22m
+├── [2m../node_modules/rxjs/_esm5/operators/[22m[0mindex.js[0m                                                  [2m[35m24 KB[39m[22m    [2m[32m1.10s[39m[22m
+├── [2m../node_modules/buffer/[22m[0mindex.js[0m                                                             [2m[35m19.72 KB[39m[22m    [2m[32m830ms[39m[22m
+├── [2mtrello/[22m[0mtrello.component.ts[0m                                                                  [2m[35m13.88 KB[39m[22m    [2m[32m127ms[39m[22m
+├── [2m../node_modules/rxjs/_esm5/[22m[0mindex.js[0m                                                         [2m[35m12.52 KB[39m[22m    [2m[32m803ms[39m[22m
+├── [2m../node_modules/node-libs-browser/node_modules/readable-stream/lib/[22m[0m_stream_readable.js[0m      [2m[35m11.89 KB[39m[22m    [2m[32m708ms[39m[22m
+├── [2m../node_modules/reflect-metadata/[22m[0mReflect.js[0m                                                  [2m[35m9.51 KB[39m[22m    [2m[32m925ms[39m[22m
+├── [2m../node_modules/@rxdi/core/dist/services/external-importer/[22m[0mexternal-importer.js[0m              [2m[35m9.25 KB[39m[22m    [2m[32m1.82s[39m[22m
+├── [2m../node_modules/node-libs-browser/node_modules/readable-stream/lib/[22m[0m_stream_writable.js[0m       [2m[35m8.02 KB[39m[22m    [2m[32m733ms[39m[22m
+├── [2m../node_modules/@rxdi/core/dist/services/bootstrap/[22m[0mbootstrap.service.js[0m                      [2m[35m7.76 KB[39m[22m    [2m[32m2.24s[39m[22m
+└── [2m+ 388 more assets[22m                                                                     
+1568542258802,Bundling finished!
 
-1568478843356,Adding commit message Init trello component...
+1568542258802,Adding commit message dada...
 
-1568478843367,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmS6PGJbdmPcutsBkqKnFZiJ7KQn1VVHfdQbEMFU63wzSw
-1568478843367,Commit message added...
+1568542258808,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmYMbmt4DUfqiXd5Qw8KTRSFkpRFqgcVPUPWBry31ZqRu7
+1568542258808,Commit message added...
 
-1568478843369,Reading bundle ./my-component/build/trello.js finished!
+1568542258816,Reading bundle ./trello/build/trello.js finished!
 
-1568478843378,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmQGKFj9pF8pcdffdnRZJ5rLg1rs8xiNh2D974ZG9FQsgU
-1568478843379,Bundle added to ipfs ./my-component/build/trello.js
+1568542259079,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmQQActEMDke4BGXso7f17ZQnkEHh9Bcp6V7DyYceZwSfh
+1568542259080,Bundle added to ipfs ./trello/build/trello.js
 
-1568478843379,Typescript definitions merge started!
+1568542259080,Typescript definitions merge started!
 
-1568478843380,Typescript merging definitions started in child process...
+1568542259080,Typescript merging definitions started in child process...
 
-1568478845943,Child process exited with code 0
+1568542261498,Child process exited with code 0
 
-1568478845943,Typescript definitions merge finished! Reading file...
+1568542261499,Typescript definitions merge finished! Reading file...
 
-1568478845946,Typescript definitions read finished! Adding to IPFS...
+1568542261501,Typescript definitions read finished! Adding to IPFS...
 
-1568478845955,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmQTChBeDFCWWfcdFxNpRfjuq5TXhpNvjTzskFfp1Mhm7L
-1568478845955,Typescript definitions added to IPFS! Adding module configuration...
+1568542261507,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmaQs19At26D4gSfppPQT4qXsBhxvrUZjTu8wzwAVnkbBc
+1568542261508,Typescript definitions added to IPFS! Adding module configuration...
 
-1568478845958,Reactive file present reactive.json package dependencies will be taken from it
-1568478845963,Current module before deploy {"name":"@my-project/trello","module":"QmQGKFj9pF8pcdffdnRZJ5rLg1rs8xiNh2D974ZG9FQsgU","createdAt":"2019-09-14T16:34:05.957Z","typings":"QmQTChBeDFCWWfcdFxNpRfjuq5TXhpNvjTzskFfp1Mhm7L","message":"QmS6PGJbdmPcutsBkqKnFZiJ7KQn1VVHfdQbEMFU63wzSw","previous":["QmXdhmuNSyGfjP9gZcHHTNRiVokzEBUpzLbddEX63n8Ajd"]}
-1568478846249,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmV5bZGEcY1anNnmMKsKsaewmyhZ9adzqZiPrpjvRqz1d6
-1568478846251,Module configuration added to ipfs!
+1568542261509,Reactive file present reactive.json package dependencies will be taken from it
+1568542261513,Current module before deploy {"name":"@my-project/trello","module":"QmQQActEMDke4BGXso7f17ZQnkEHh9Bcp6V7DyYceZwSfh","createdAt":"2019-09-15T10:11:01.509Z","typings":"QmaQs19At26D4gSfppPQT4qXsBhxvrUZjTu8wzwAVnkbBc","message":"QmYMbmt4DUfqiXd5Qw8KTRSFkpRFqgcVPUPWBry31ZqRu7","previous":["QmXdhmuNSyGfjP9gZcHHTNRiVokzEBUpzLbddEX63n8Ajd","QmV5bZGEcY1anNnmMKsKsaewmyhZ9adzqZiPrpjvRqz1d6","QmPGLZcyDsro9scANFN7o6pWjq3Sf2jkn3xdRrfMRv6q1Z","QmTPSgwcXPQxsSmfnuQ7DfMg8L1beiG4eUsUduXtsGc1VF","QmNUBfw8mDvfvs5FyapsLaFSWGBfhhq2u9MJ8oWd5cGLDZ","QmdcRLtZZceTZmMV7TtVZk5iSvKgsUrQWY7SwLkE15eder","QmQWUkAMV3YJnVymGfTg7XSVoy3qea5ZRLC23yG33M4AzK","QmV8q3reEXq53YucVAktZ96JqsZTv1fqnnmqYUaJnLbi2R"]}
+1568542261686,Cloudflare: https://cloudflare-ipfs.com/ipfs/QmUeG7W8FWU42WnF5jBJHP42eaHknJepgEvrKSqWQsb6Qx
+1568542261688,Module configuration added to ipfs!
 
-1568478846463,Module saved to persistant history!
+1568542261692,Module saved to persistant history!

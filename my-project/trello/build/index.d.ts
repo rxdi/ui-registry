@@ -1121,6 +1121,56 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/lit-element/
 	export {};
 
 }
+declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/tokens' {
+	import { CSSResult } from '../lit-element/lib/css-tag';
+	import { CSSResultArray } from '../lit-element/lit-element';
+	import { Subscription } from 'rxjs';
+	import { TemplateResult } from '../lit-html/lit-html';
+	export class RXDIElement extends HTMLElement {
+	    static setElement?<T>(component: T, document: RXDIElement): T;
+	    static is?(document: RXDIElement): RXDIElement;
+	    static styles?: CSSResult | CSSResultArray;
+	    static subscriptions?: Map<Subscription, Subscription>;
+	    getTemplateResult?(): TemplateResult;
+	    OnBefore?: () => void;
+	    OnInit?: () => void;
+	    OnUpdate?: () => void;
+	    OnUpdateFirst?: () => void;
+	}
+
+}
+declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/component.decorator' {
+	import { CSSResult } from '../lit-element/lib/css-tag';
+	import { TemplateResult } from '../lit-html/lit-html';
+	import { RXDIElement } from './tokens';
+	interface CustomElementConfig<T> {
+	    selector: string;
+	    template?: (self: T) => TemplateResult;
+	    style?: CSSResult;
+	    styles?: CSSResult[];
+	    useShadow?: boolean;
+	    extends?: string;
+	    container?: Element | DocumentFragment;
+	}
+	interface ClassDescriptor {
+	    kind: 'class';
+	    elements: ClassElement[];
+	    finisher?: <T>(clazz: Constructor<T>) => undefined | Constructor<T>;
+	}
+	interface ClassElement {
+	    kind: 'field' | 'method';
+	    key: PropertyKey;
+	    placement: 'static' | 'prototype' | 'own';
+	    initializer?: Function;
+	    extras?: ClassElement[];
+	    finisher?: <T>(clazz: Constructor<T>) => undefined | Constructor<T>;
+	    descriptor?: PropertyDescriptor;
+	} type Constructor<T> = new (...args: unknown[]) => T;
+	export const customElement: <T>(tag: string, config?: CustomElementConfig<T>) => (classOrDescriptor: ClassDescriptor | Constructor<RXDIElement>) => void;
+	export const Component: <T>(config: CustomElementConfig<T>) => (classOrDescriptor: ClassDescriptor | Constructor<RXDIElement>) => void;
+	export {};
+
+}
 declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/hooks/on-before' {
 	export interface OnBefore {
 	    OnBefore(): void;
@@ -1157,57 +1207,6 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/h
 	export * from './on-init';
 	export * from './on-update';
 	export * from './on-update-first';
-
-}
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/tokens' {
-	import { CSSResult } from '../lit-element/lib/css-tag';
-	import { CSSResultArray } from '../lit-element/lit-element';
-	import { Subscription } from 'rxjs';
-	import { TemplateResult } from '../lit-html/lit-html';
-	import { OnInit, OnUpdate, OnUpdateFirst, OnBefore } from './hooks';
-	export class RXDIElement extends HTMLElement implements OnInit, OnUpdate, OnUpdateFirst, OnBefore {
-	    static setElement?<T>(component: T, document: RXDIElement): T;
-	    static is?(document: RXDIElement): RXDIElement;
-	    static styles?: CSSResult | CSSResultArray;
-	    static subscriptions?: Map<Subscription, Subscription>;
-	    getTemplateResult?(): TemplateResult;
-	    OnBefore(): void;
-	    OnInit(): void;
-	    OnUpdate(): void;
-	    OnUpdateFirst(): void;
-	}
-
-}
-declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/component.decorator' {
-	import { CSSResult } from '../lit-element/lib/css-tag';
-	import { TemplateResult } from '../lit-html/lit-html';
-	import { RXDIElement } from './tokens';
-	interface CustomElementConfig<T> {
-	    selector: string;
-	    template?: (self: T) => TemplateResult;
-	    style?: CSSResult;
-	    styles?: CSSResult[];
-	    useShadow?: boolean;
-	    extends?: string;
-	    container?: Element | DocumentFragment;
-	}
-	interface ClassDescriptor {
-	    kind: 'class';
-	    elements: ClassElement[];
-	    finisher?: <T>(clazz: Constructor<T>) => undefined | Constructor<T>;
-	}
-	interface ClassElement {
-	    kind: 'field' | 'method';
-	    key: PropertyKey;
-	    placement: 'static' | 'prototype' | 'own';
-	    initializer?: Function;
-	    extras?: ClassElement[];
-	    finisher?: <T>(clazz: Constructor<T>) => undefined | Constructor<T>;
-	    descriptor?: PropertyDescriptor;
-	} type Constructor<T> = new (...args: unknown[]) => T;
-	export const customElement: <T>(tag: string, config?: CustomElementConfig<T>) => (classOrDescriptor: ClassDescriptor | Constructor<RXDIElement>) => void;
-	export const Component: <T>(config: CustomElementConfig<T>) => (classOrDescriptor: ClassDescriptor | Constructor<RXDIElement>) => void;
-	export {};
 
 }
 declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/decorators/test.helpers' {
@@ -1842,664 +1841,7 @@ declare module '@my-project/trello/node_modules/@rxdi/lit-html/dist/index' {
 	export * from './lit-element/lit-element';
 
 }
-declare module '@my-project/trello/node_modules/@rxdi/router/dist/router.component' {
-	import { LitElement } from '@rxdi/lit-html';
-	export class RouterComponent extends LitElement {
-	    private routerInitialized;
-	    id: string;
-	    connectedCallback(): void;
-	    render(): import("@rxdi/lit-html").TemplateResult;
-	}
-
-}
-/// <reference lib="DOM" />
-
-// NOTE(platosha): The main TypeScript declarations are auto-generated
-// in `dist/vaadin-router.d.ts` from JSdoc annotations during the build.
-// This file is supplemental, it only covers the types missing from
-// the generated declarations.
-
-declare class Router {
-}
-
-declare namespace Router {
-  class NotFoundResult {
-    // Prevent instantiation and extension
-    private constructor();
-
-    // Prevent treating any object literals `{}` as a match for this type
-    private _notFoundResultBrand: never;
-  }
-
-  class ComponentResult {
-    private constructor();
-    private _componentResultBrand: never;
-  }
-
-  class PreventResult {
-    private constructor();
-    private _preventResultBrand: never; 
-  }
-
-  class RedirectResult {
-    private constructor();
-    private _redirectResultBrand: never;
-  }
-
-  type ActionResult = void
-    | null
-    | HTMLElement
-    | NotFoundResult
-    | ComponentResult
-    | RedirectResult
-    | PreventResult;
-
-  type ParamValue = string | string[];
-  type IndexedParams = {[key in string | number]: ParamValue};
-  type Params = IndexedParams | ParamValue[];
-
-  class Context {
-    pathname: string;
-    search: string;
-    hash: string;
-    params: IndexedParams;
-    route: Route;
-    next: () => Promise<ActionResult>;
-  }
-
-  class Commands {
-    component: (name: string) => ComponentResult;
-    redirect: (path: string) => RedirectResult;
-    prevent: () => PreventResult;
-  }
-
-  interface ActionFn {
-    (context: Context, commmands: Commands): ActionResult | Promise<ActionResult>;
-  }
-
-  interface ChildrenFn {
-    (): Route[] | Promise<Route[]>
-  }
-
-  interface BaseRoute {
-    path: string;
-    name?: string;
-    // Route requires at least one of the following optional properties
-    action?: ActionFn;
-    bundle?: string;
-    children?: Route[] | ChildrenFn;
-    component?: string;
-    redirect?: string;
-  }
-  interface RouteWithAction extends BaseRoute {
-    action: ActionFn;
-  }
-  interface RouteWithBundle extends BaseRoute {
-    bundle: string;
-  }
-  interface RouteWithChildren extends BaseRoute {
-    children: Route[] | ChildrenFn;
-  }
-  interface RouteWithComponent extends BaseRoute {
-    component: string;
-  }
-  interface RouteWithRedirect extends BaseRoute {
-    redirect: string;
-  }
-  type Route = RouteWithAction
-    | RouteWithBundle
-    | RouteWithChildren
-    | RouteWithComponent
-    | RouteWithRedirect;
-
-  class Location {
-    baseUrl: string;
-    params: IndexedParams;
-    pathname: string;
-    search: string;
-    hash: string;
-    redirectFrom?: string;
-    route: Route | null;
-    routes: Array<Route>;
-    getUrl(params?: Params): string;
-  }
-
-  interface Options {
-    baseUrl?: string;
-  }
-
-  interface NavigationTrigger {
-    activate(): void;
-    inactivate(): void;
-  }
-
-  // FIXME(platosha): declare builtin navigation triggers
-  // // Alias for referencing interface from the class below
-  // type _NavigationTrigger = NavigationTrigger;
-  // namespace NavigationTrigger {
-  //   const CLICK: _NavigationTrigger;
-  //   const POPSTATE: _NavigationTrigger;
-  // }
-}
-declare module '@my-project/trello/node_modules/@vaadin/router/dist/vaadin-router' {
-	 class NotFoundResult {
-	} class Resolver {
-	  constructor(routes: any, options?: any);
-
-	  /**
-	   * Returns the current list of routes (as a shallow copy). Adding / removing
-	   * routes to / from the returned array does not affect the routing config,
-	   * but modifying the route objects does.
-	   */
-	  getRoutes(): Router.Route[];
-
-	  /**
-	   * Sets the routing config (replacing the existing one).
-	   *
-	   * @param routes a single route or an array of those
-	   *    (the array is shallow copied)
-	   */
-	  setRoutes(routes: Router.Route[]|Router.Route): void;
-
-	  /**
-	   * Appends one or several routes to the routing config and returns the
-	   * effective routing config after the operation.
-	   *
-	   * @param routes a single route or an array of those
-	   *    (the array is shallow copied)
-	   */
-	  addRoutes(routes: Router.Route[]|Router.Route): Router.Route[];
-
-	  /**
-	   * Removes all existing routes from the routing config.
-	   */
-	  removeRoutes(): void;
-
-	  /**
-	   * Asynchronously resolves the given pathname, i.e. finds all routes matching
-	   * the pathname and tries resolving them one after another in the order they
-	   * are listed in the routes config until the first non-null result.
-	   *
-	   * Returns a promise that is fulfilled with the return value of an object that consists of the first
-	   * route handler result that returns something other than `null` or `undefined` and context used to get this result.
-	   *
-	   * If no route handlers return a non-null result, or if no route matches the
-	   * given pathname the returned promise is rejected with a 'page not found'
-	   * `Error`.
-	   *
-	   * @param pathnameOrContext the pathname to
-	   *    resolve or a context object with a `pathname` property and other
-	   *    properties to pass to the route resolver functions.
-	   */
-	  resolve(pathnameOrContext: string|{pathname: string}): Promise<any|null>;
-	} class Router extends Resolver {
-
-	  /**
-	   * The base URL for all routes in the router instance. By default,
-	   * takes the `<base href>` attribute value if the base element exists
-	   * in the `<head>`.
-	   */
-	  baseUrl: string;
-
-	  /**
-	   * A promise that is settled after the current render cycle completes. If
-	   * there is no render cycle in progress the promise is immediately settled
-	   * with the last render cycle result.
-	   */
-	  ready: Promise<Router.Location>;
-
-	  /**
-	   * Contains read-only information about the current router location:
-	   * pathname, active routes, parameters. See the
-	   * [Location type declaration](#/classes/Router.Location)
-	   * for more details.
-	   */
-	  location: Router.Location;
-
-	  /**
-	   * Creates a new Router instance with a given outlet, and
-	   * automatically subscribes it to navigation events on the `window`.
-	   * Using a constructor argument or a setter for outlet is equivalent:
-	   *
-	   * ```
-	   * const router = new Router();
-	   * router.setOutlet(outlet);
-	   * ```
-	   */
-	  constructor(outlet?: Node|null, options?: Router.Options|null);
-
-	  /**
-	   * Configures what triggers Router navigation events:
-	   *  - `POPSTATE`: popstate events on the current `window`
-	   *  - `CLICK`: click events on `<a>` links leading to the current page
-	   *
-	   * This method is invoked with the pre-configured values when creating a new Router instance.
-	   * By default, both `POPSTATE` and `CLICK` are enabled. This setup is expected to cover most of the use cases.
-	   *
-	   * See the `router-config.js` for the default navigation triggers config. Based on it, you can
-	   * create the own one and only import the triggers you need, instead of pulling in all the code,
-	   * e.g. if you want to handle `click` differently.
-	   *
-	   * See also **Navigation Triggers** section in [Live Examples](#/classes/Router/demos/demo/index.html).
-	   */
-	  static setTriggers(...triggers: Array<Router.NavigationTrigger|null>): void;
-
-	  /**
-	   * Triggers navigation to a new path. Returns a boolean without waiting until
-	   * the navigation is complete. Returns `true` if at least one `Router`
-	   * has handled the navigation (was subscribed and had `baseUrl` matching
-	   * the `pathname` argument), otherwise returns `false`.
-	   *
-	   * @param pathname a new in-app path
-	   */
-	  static go(pathname: string): boolean;
-
-	  /**
-	   * Sets the routing config (replacing the existing one) and triggers a
-	   * navigation event so that the router outlet is refreshed according to the
-	   * current `window.location` and the new routing config.
-	   *
-	   * Each route object may have the following properties, listed here in the processing order:
-	   * * `path` – the route path (relative to the parent route if any) in the
-	   * [express.js syntax](https://expressjs.com/en/guide/routing.html#route-paths").
-	   *
-	   * * `children` – an array of nested routes or a function that provides this
-	   * array at the render time. The function can be synchronous or asynchronous:
-	   * in the latter case the render is delayed until the returned promise is
-	   * resolved. The `children` function is executed every time when this route is
-	   * being rendered. This allows for dynamic route structures (e.g. backend-defined),
-	   * but it might have a performance impact as well. In order to avoid calling
-	   * the function on subsequent renders, you can override the `children` property
-	   * of the route object and save the calculated array there
-	   * (via `context.route.children = [ route1, route2, ...];`).
-	   * Parent routes are fully resolved before resolving the children. Children
-	   * 'path' values are relative to the parent ones.
-	   *
-	   * * `action` – the action that is executed before the route is resolved.
-	   * The value for this property should be a function, accepting `context`
-	   * and `commands` parameters described below. If present, this function is
-	   * always invoked first, disregarding of the other properties' presence.
-	   * The action can return a result directly or within a `Promise`, which
-	   * resolves to the result. If the action result is an `HTMLElement` instance,
-	   * a `commands.component(name)` result, a `commands.redirect(path)` result,
-	   * or a `context.next()` result, the current route resolution is finished,
-	   * and other route config properties are ignored.
-	   * See also **Route Actions** section in [Live Examples](#/classes/Router/demos/demo/index.html).
-	   *
-	   * * `redirect` – other route's path to redirect to. Passes all route parameters to the redirect target.
-	   * The target route should also be defined.
-	   * See also **Redirects** section in [Live Examples](#/classes/Router/demos/demo/index.html).
-	   *
-	   * * `bundle` – string containing the path to `.js` or `.mjs` bundle to load before resolving the route,
-	   * or the object with "module" and "nomodule" keys referring to different bundles.
-	   * Each bundle is only loaded once. If "module" and "nomodule" are set, only one bundle is loaded,
-	   * depending on whether the browser supports ES modules or not.
-	   * The property is ignored when either an `action` returns the result or `redirect` property is present.
-	   * Any error, e.g. 404 while loading bundle will cause route resolution to throw.
-	   * See also **Code Splitting** section in [Live Examples](#/classes/Router/demos/demo/index.html).
-	   *
-	   * * `component` – the tag name of the Web Component to resolve the route to.
-	   * The property is ignored when either an `action` returns the result or `redirect` property is present.
-	   * If route contains the `component` property (or an action that return a component)
-	   * and its child route also contains the `component` property, child route's component
-	   * will be rendered as a light dom child of a parent component.
-	   *
-	   * * `name` – the string name of the route to use in the
-	   * [`router.urlForName(name, params)`](#/classes/Router#method-urlForName)
-	   * navigation helper method.
-	   *
-	   * For any route function (`action`, `children`) defined, the corresponding `route` object is available inside the callback
-	   * through the `this` reference. If you need to access it, make sure you define the callback as a non-arrow function
-	   * because arrow functions do not have their own `this` reference.
-	   *
-	   * `context` object that is passed to `action` function holds the following properties:
-	   * * `context.pathname` – string with the pathname being resolved
-	   *
-	   * * `context.search` – search query string
-	   *
-	   * * `context.hash` – hash string
-	   *
-	   * * `context.params` – object with route parameters
-	   *
-	   * * `context.route` – object that holds the route that is currently being rendered.
-	   *
-	   * * `context.next()` – function for asynchronously getting the next route
-	   * contents from the resolution chain (if any)
-	   *
-	   * `commands` object that is passed to `action` function has
-	   * the following methods:
-	   *
-	   * * `commands.redirect(path)` – function that creates a redirect data
-	   * for the path specified.
-	   *
-	   * * `commands.component(component)` – function that creates a new HTMLElement
-	   * with current context. Note: the component created by this function is reused if visiting the same path twice in row.
-	   *
-	   * @param routes a single route or an array of those
-	   * @param skipRender configure the router but skip rendering the
-	   *     route corresponding to the current `window.location` values
-	   */
-	  setRoutes(routes: Router.Route[]|Router.Route, skipRender?: boolean|null): Promise<Node>;
-
-	  /**
-	   * Sets the router outlet (the DOM node where the content for the current
-	   * route is inserted). Any content pre-existing in the router outlet is
-	   * removed at the end of each render pass.
-	   *
-	   * NOTE: this method is automatically invoked first time when creating a new Router instance.
-	   *
-	   * @param outlet the DOM node where the content for the current route
-	   *     is inserted.
-	   */
-	  setOutlet(outlet: Node|null): void;
-
-	  /**
-	   * Returns the current router outlet. The initial value is `undefined`.
-	   *
-	   * @returns the current router outlet (or `undefined`)
-	   */
-	  getOutlet(): Node|null;
-
-	  /**
-	   * Asynchronously resolves the given pathname and renders the resolved route
-	   * component into the router outlet. If no router outlet is set at the time of
-	   * calling this method, or at the time when the route resolution is completed,
-	   * a `TypeError` is thrown.
-	   *
-	   * Returns a promise that is fulfilled with the router outlet DOM Node after
-	   * the route component is created and inserted into the router outlet, or
-	   * rejected if no route matches the given path.
-	   *
-	   * If another render pass is started before the previous one is completed, the
-	   * result of the previous render pass is ignored.
-	   *
-	   * @param pathnameOrContext the pathname to render or a context object with a `pathname` property,
-	   *    optional `search` and `hash` properties, and other properties
-	   *    to pass to the resolver.
-	   * @param shouldUpdateHistory update browser history with the rendered location
-	   */
-	  render(pathnameOrContext: string|{pathname: string, search: string|null, hash: string|null}, shouldUpdateHistory?: boolean): Promise<Node>;
-
-	  /**
-	   * Subscribes this instance to navigation events on the `window`.
-	   *
-	   * NOTE: beware of resource leaks. For as long as a router instance is
-	   * subscribed to navigation events, it won't be garbage collected.
-	   */
-	  subscribe(): void;
-
-	  /**
-	   * Removes the subscription to navigation events created in the `subscribe()`
-	   * method.
-	   */
-	  unsubscribe(): void;
-
-	  /**
-	   * Generates a URL for the route with the given name, optionally performing
-	   * substitution of parameters.
-	   *
-	   * The route is searched in all the Router instances subscribed to
-	   * navigation events.
-	   *
-	   * **Note:** For child route names, only array children are considered.
-	   * It is not possible to generate URLs using a name for routes set with
-	   * a children function.
-	   *
-	   * @param name the route name or the route’s `component` name.
-	   * @param params Optional object with route path parameters.
-	   * Named parameters are passed by name (`params[name] = value`), unnamed
-	   * parameters are passed by index (`params[index] = value`).
-	   */
-	  urlForName(name: string, params?: Router.Params|null): string;
-
-	  /**
-	   * Generates a URL for the given route path, optionally performing
-	   * substitution of parameters.
-	   *
-	   * @param path string route path declared in [express.js syntax](https://expressjs.com/en/guide/routing.html#route-paths").
-	   * @param params Optional object with route path parameters.
-	   * Named parameters are passed by name (`params[name] = value`), unnamed
-	   * parameters are passed by index (`params[index] = value`).
-	   */
-	  urlForPath(path: string, params?: Router.Params|null): string;
-	}
-
-	export {Resolver, Router};
-
-}
-declare module '@my-project/trello/node_modules/@rxdi/router/dist/outlet' {
-	import { Router as VaadinRouter } from '@vaadin/router';
-	import { NavigationTrigger } from './injection.tokens';
-	import { RouterOptions, Route } from './injection.tokens';
-	export class Outlet<C = {}> extends VaadinRouter {
-	    private options;
-	    activePath: string;
-	    private freeze;
-	    constructor(element: Element, options: RouterOptions);
-	    freezeRouter(): void;
-	    unfreezeRouter(): void;
-	    /**
-	     * Takes current routes and set it
-	     * @param routes: Route<C>[]
-	     * @returns Route<C>[]
-	     */
-	    setRoutes(routes: Route<C>[]): Route<C>[];
-	    /**
-	     * Takes current routes and set it
-	     * @param routes: Route<C>[]
-	     * @returns void
-	     */
-	    setOutlet(outlet: Node): void;
-	    /**
-	     * Triggers navigation to a new path. Returns a boolean without waiting until the navigation is complete. Returns true if at least one Vaadin.Router has handled the navigation (was subscribed and had baseUrl matching the pathname argument), otherwise returns false.
-	     * @param pathnamea new in-app path
-	     * @returns void
-	     */
-	    go(path: string): boolean;
-	    /**
-	     * Vaadin Router supports refferring to routes using string names. You can assign a name to a route using the name property of a route object, then generate URLs for that route using the router.urlForName(name, parameters) helper instance method.
-	     * @param name — the route name
-	     * @param parameters — optional object with parameters for substitution in the route path
-	     */
-	    urlForName(url: string, params: any): string;
-	    /**
-	     * router.urlForPath(path, parameters) is a helper method that generates a URL for the given route path, optionally performing substitution of parameters.
-	     * @param path — a string route path defined in express.js syntax
-	     * @param parameters — optional object with parameters for path substitution
-	     */
-	    urlForPath(path: string, params: any): string;
-	    /**
-	     * Configures what triggers Vaadin.Router navigation events:
-	     * @event POPSTATE: popstate events on the current window
-	     * @event CLICK: click events on <a> links leading to the current page
-	     * This method is invoked with the pre-configured values when creating a new Router instance. By default, both POPSTATE and CLICK are enabled. This setup is expected to cover most of the use cases.See the router-config.js for the default navigation triggers config. Based on it, you can create the own one and only import the triggers you need, instead of pulling in all the code, e.g. if you want to handle click differently.
-	     */
-	    setTriggers(triggers: NavigationTrigger[]): void;
-	    /**
-	     * Returns the current router outlet. The initial value is undefined.
-	     */
-	    getOutlet(): Node;
-	    /**
-	     * Inherited from Vaadin.Resolver Returns the current list of routes (as a shallow copy). Adding / removing routes to / from the returned array does not affect the routing config, but modifying the route objects does.
-	     */
-	    getRoutes(): Route<C>[];
-	    /**
-	     * Removes all existing routes from the routing config.
-	     */
-	    removeRoutes(): void;
-	    /**
-	     * Asynchronously resolves the given pathname and renders the resolved route component into the router outlet. If no router outlet is set at the time of calling this method, or at the time when the route resolution is completed, a TypeError is thrown.
-	     * Returns a promise that is fulfilled with the router outlet DOM Node after the route component is created and inserted into the router outlet, or rejected if no route matches the given path.
-	     * If another render pass is started before the previous one is completed, the result of the previous render pass is ignored.
-	     * @param pathnameOrContext — the pathname to render or a context object with a pathname property and other properties to pass to the resolver.
-	     * @param shouldUpdateHistory
-	     */
-	    render(pathnameOrContext: string | {
-	        pathname: string;
-	    }, shouldUpdateHistory: any): Promise<Node>;
-	    /**
-	     * Subscribes this instance to navigation events on the window.
-	     * NOTE: beware of resource leaks. For as long as a router instance is subscribed to navigation events, it won't be garbage collected.
-	     */
-	    subscribe(): void;
-	    /**
-	     * Removes the subscription to navigation events created in the subscribe() method.
-	     */
-	    unsubscribe(): void;
-	    addRoutes(routes: Route<C> | Route<C>[]): Route<C>[];
-	}
-
-}
-declare module '@my-project/trello/node_modules/@rxdi/router/dist/injection.tokens' {
-	import { BehaviorSubject, Observable } from 'rxjs';
-	import { Outlet } from './outlet';
-	import { RouterComponent } from './router.component';
-	export interface NavigationTrigger {
-	}
-	export function Router(): (target: Object, propertyKey: string) => void;
-	export type LazyChildren = (context?: CanActivateContext, commands?: CanActivateCommands) => Promise<any>;
-	export type Router = Outlet;
-	export interface Route<C = any> {
-	    path: string;
-	    component?: C | Function;
-	    animate?: boolean;
-	    children?: Route<C>[] | LazyChildren;
-	    redirect?: string;
-	    freeze?: boolean;
-	    action?: LazyChildren;
-	    canActivate?: Function;
-	}
-	export interface CanActivateContextKeys {
-	    delimiter: string | '/';
-	    name: number;
-	    optional: boolean;
-	    partial: boolean;
-	    pattern: string | '.*';
-	    prefix: string | '';
-	    repeat: boolean;
-	}
-	export interface RouteContext extends Route {
-	    parent: {
-	        parent: any;
-	        path: string;
-	    };
-	}
-	export interface CanActivateResolver {
-	    canActivate(context: CanActivateContext, commands: CanActivateCommands): CanActivateRedirectResult | boolean | Promise<boolean> | Observable<boolean> | void;
-	}
-	export interface CanActivateRedirectResult {
-	    from: string;
-	    params: any;
-	    pathname: string;
-	}
-	export interface CanActivateContext {
-	    chain: {
-	        route: RouteContext;
-	        path: string;
-	        element: HTMLUnknownElement;
-	    }[];
-	    keys: any[];
-	    next: (resume?: any, parent?: any, prevResult?: any) => any;
-	}
-	export interface CanActivateCommands {
-	    component: () => HTMLUnknownElement;
-	    redirect: (path: string) => CanActivateRedirectResult;
-	}
-	export const RouterRoutlet = "router-outlet";
-	export const RouterInitialized = "router-initialized";
-	export const Routes = "router-routes";
-	export const RouterOptions = "router-options";
-	export interface RouterOptions {
-	    baseUrl?: string;
-	    log?: boolean;
-	    freeze?: boolean;
-	}
-	export type Routes = Route<any>[];
-	export type RouterRoutlet = BehaviorSubject<Outlet>;
-	export type RouterInitialized = BehaviorSubject<RouterComponent>;
-	export interface OnBeforeEnter {
-	    onBeforeEnter(): Promise<any> | void;
-	}
-	export interface OnAfterEnter {
-	    onAfterEnter(): void;
-	}
-	export interface OnBeforeLeave {
-	    onBeforeLeave(): void;
-	}
-	export interface OnAfterLeave {
-	    onAfterLeave(): void;
-	}
-
-}
-declare module '@my-project/trello/node_modules/@rxdi/router/dist/not-found.component' {
-	export class NotFoundComponent extends HTMLElement {
-	}
-	export const NotFoundPathConfig: {
-	    path: string;
-	    component: string;
-	};
-
-}
-declare module '@my-project/trello/node_modules/@rxdi/router/dist/decorators' {
-	/**
-	 * Define getter to `this.location.params` from component `this` and assign params to decorated property
-	 *
-	 * Info can be found at @vaadin-router https://vaadin.github.io/vaadin-router/vaadin-router/demo/#vaadin-router-route-parameters-demos
-	 * @param target: LitElement | HTMLElement
-	 * @returns this.location.params as getter (lazy evaluated)
-	 * Usage:
-	 *
-	 *
-	```
-	{path: '/profile/:name', component: 'x-user-profile'},
-
-	import { customElement, LitElement } from '@rxdi/lit-html';
-
-	@customElement('x-user-profile')
-	export class UserProfile extends LitElement {
-
-	  @RouteParams()
-	  params: { name: string }
-
-	  render() {
-	    return html`${this.params.name}`;
-	  }
-	}
-	```
-	   */
-	export function RouteParams(): (target: Object, propertyKey: string) => void;
-
-}
-declare module '@my-project/trello/node_modules/@rxdi/router/dist/helpers' {
-	import { BehaviorSubject } from 'rxjs';
-	import { Route } from './injection.tokens';
-	export const ChildRoutesObservable: BehaviorSubject<Route<any>[]>;
-	export function loadRoutes(routes: Route[]): Route<any>[];
-
-}
-declare module '@my-project/trello/node_modules/@rxdi/router/dist/index' {
-	import { ModuleWithServices } from '@rxdi/core';
-	import { RouterComponent } from './router.component';
-	import { RouterOptions, Route } from './injection.tokens';
-	import { NotFoundComponent } from './not-found.component';
-	export class RouterModule {
-	    static forRoot<C>(routes: Route<C>[], options?: RouterOptions): ModuleWithServices;
-	    static forChild(routes: Route<any>[]): typeof RouterModule;
-	}
-	export * from './injection.tokens';
-	export * from './outlet';
-	export * from './decorators';
-	export * from './router.component';
-	export * from './not-found.component';
-	export * from './helpers'; global {
-	    interface HTMLElementTagNameMap {
-	        'router-outlet': RouterComponent;
-	        'default-not-found-component': NotFoundComponent;
-	    }
-	}
-
-}
-declare module '@my-project/trello/my-component/trello.component' {
+declare module '@my-project/trello/trello/trello.component' {
 	import { LitElement, OnInit, OnDestroy, OnUpdate } from '@rxdi/lit-html';
 	import '@my-project/trello/tailwind/tailwind.component';
 	/**
@@ -2507,7 +1849,6 @@ declare module '@my-project/trello/my-component/trello.component' {
 	 */
 	export class TrelloComponent extends LitElement implements OnInit, OnDestroy, OnUpdate {
 	    private name;
-	    private params;
 	    private divs;
 	    OnInit(): void;
 	    OnDestroy(): void;

@@ -1,11 +1,18 @@
 {
   "name": "@my-project/trello",
-  "module": "QmQGKFj9pF8pcdffdnRZJ5rLg1rs8xiNh2D974ZG9FQsgU",
-  "createdAt": "2019-09-14T16:34:05.957Z",
-  "typings": "QmQTChBeDFCWWfcdFxNpRfjuq5TXhpNvjTzskFfp1Mhm7L",
-  "message": "QmS6PGJbdmPcutsBkqKnFZiJ7KQn1VVHfdQbEMFU63wzSw",
+  "module": "QmQQActEMDke4BGXso7f17ZQnkEHh9Bcp6V7DyYceZwSfh",
+  "createdAt": "2019-09-15T10:11:01.509Z",
+  "typings": "QmaQs19At26D4gSfppPQT4qXsBhxvrUZjTu8wzwAVnkbBc",
+  "message": "QmYMbmt4DUfqiXd5Qw8KTRSFkpRFqgcVPUPWBry31ZqRu7",
   "previous": [
     "QmXdhmuNSyGfjP9gZcHHTNRiVokzEBUpzLbddEX63n8Ajd",
-    "QmV5bZGEcY1anNnmMKsKsaewmyhZ9adzqZiPrpjvRqz1d6"
+    "QmV5bZGEcY1anNnmMKsKsaewmyhZ9adzqZiPrpjvRqz1d6",
+    "QmPGLZcyDsro9scANFN7o6pWjq3Sf2jkn3xdRrfMRv6q1Z",
+    "QmTPSgwcXPQxsSmfnuQ7DfMg8L1beiG4eUsUduXtsGc1VF",
+    "QmNUBfw8mDvfvs5FyapsLaFSWGBfhhq2u9MJ8oWd5cGLDZ",
+    "QmdcRLtZZceTZmMV7TtVZk5iSvKgsUrQWY7SwLkE15eder",
+    "QmQWUkAMV3YJnVymGfTg7XSVoy3qea5ZRLC23yG33M4AzK",
+    "QmV8q3reEXq53YucVAktZ96JqsZTv1fqnnmqYUaJnLbi2R",
+    "QmUeG7W8FWU42WnF5jBJHP42eaHknJepgEvrKSqWQsb6Qx"
   ]
 }

@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "@rxdi/lit-html": "0.7.17"
-  }
+    "@rxdi/lit-html": "^0.7.18"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ]
 }
