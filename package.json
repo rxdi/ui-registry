@@ -1,5 +1,5 @@
 {
-  "name": "ui-registry",
+  "name": "@rxdi/ui-registry",
   "version": "0.0.1",
   "description": "Decentralized UI Registry for apps of the future",
   "main": "index.js",
@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/rxdi/ui-registry#readme",
   "devDependencies": {
-    "typescript": "^3.6.3"
+    "typescript": "^3.5.3"
   }
 }
