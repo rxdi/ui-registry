@@ -1,6 +1,6 @@
 {
   "name": "@rxdi/ui-registry",
-  "version": "0.7.41",
+  "version": "0.7.42",
   "description": "Decentralized UI Registry for apps of the future",
   "main": "index.js",
   "scripts": {
